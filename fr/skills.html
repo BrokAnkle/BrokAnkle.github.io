@@ -12,8 +12,8 @@
     <header>
         <nav>
             <a href="..\index.html">Accueil</a>
-            <a href="index.html">À propos</a>
-            <a href="experiences.html">Expériences</a>
+            <a href="about.html">À propos</a>
+            <a href="experiences.html">Réalisations</a>
             Compétences
             <a href="..\en\index.html">🌐</a>
         </nav>
@@ -22,137 +22,349 @@
         <section class="skills">
             <h1>Compétences</h1>
             <h2>Compétences de programmation</h2>
+            Ce que je sais faire avec du code
             <h3>Langages de programmation</h3>
             <ul>
-                <b>C/C++</b>
-                <p>
-                    Plus de pratique avec le framework Unreal Engine, je me dépatouille tout de même pour de simples
-                    programmes. Je prévois de travailler mon C++ en suivant le <a
-                        href="https://www.khronos.org/blog/new-vulkan-game-engine-tutorial-build-your-own-production-ready-rendering-engine?="
-                        target="_blank">cours de programmation de moteur Vulkan de jeu par Khronos</a>. Lors de mon
-                    travail sur <a href="https://godotengine.org/fr/" target="_blank">Godot</a>, j'ai fréquement eu
-                    besoin
-                    de visiter le
-                    <a href="https://github.com/godotengine/godot" target="_blank">code source</a>. J'aimerais aussi
-                    pouvoir
-                    contribuer au moteur. J'ai déjà expérimenté un petit peu à rajouter des fonctionnalités. Il y aussi
-                    la librairie <a href="https://www.raylib.com/">Raylib</a> que j'aimerais explorer, elle est écrite
-                    en C mais des bindings pour énorméments de langages existent.
-                </p>
+                <li>
+                    <b>C/C++</b>
+                    <p>
+                        Plus de pratique avec le framework Unreal Engine, je me dépatouille tout de même pour de simples
+                        programmes. Je prévois de travailler mon C++ en suivant le <a
+                            href="https://www.khronos.org/blog/new-vulkan-game-engine-tutorial-build-your-own-production-ready-rendering-engine?="
+                            target="_blank">cours de programmation de moteur Vulkan de jeu par Khronos</a>. Lors de mon
+                        travail sur <a href="https://godotengine.org/fr/" target="_blank">Godot</a>, j'ai fréquement eu
+                        besoin
+                        de visiter le
+                        <a href="https://github.com/godotengine/godot" target="_blank">code source</a>. J'aimerais aussi
+                        pouvoir
+                        contribuer au moteur. J'ai déjà expérimenté un petit peu à rajouter des fonctionnalités. Il y
+                        aussi
+                        la librairie <a href="https://www.raylib.com/">Raylib</a> que j'aimerais explorer, elle est
+                        écrite
+                        en C mais des bindings pour énorméments de langages existent.
+                    </p>
+                </li>
+                <li>
+                    <b>C#</b>
+                    <p>
+                        Comme pour le C++, mon expérience avec le C# relève surtout de son utilisation avec un moteur de
+                        jeu
+                        associé, ici <a href="https://unity.com/fr" target="_blank">Unity</a>. J'ai également exploré <a
+                            href="https://godotengine.org/download/windows/" target="_blank">Godot .NET</a> pour voir
+                        la différence avec la version standard (GDScript)
+                    </p>
+                </li>
+                <li>
+                    <b>GDScript</b>
+                    <p>
+                        Le <a
+                            href="https://docs.godotengine.org/fr/4.x/tutorials/scripting/gdscript/gdscript_basics.html"
+                            target="_blank">GDScript</a>
+                        est le langage de scripting du moteur <a href="https://godotengine.org/fr/"
+                            target="_blank">Godot</a>. C'est un langage très accessible, proche du
+                        Python avec quelques éléments rappelant le JavaScript. Il est très performant mais son atout est
+                        sa
+                        flexibilité et sa capacité de "hot reload". On peut modifier les scripts au runtime et les
+                        changements sont pris en compte immédiatement en jeu. Super pour de rapides tests et débugages.
+                        Si
+                        on a besoin de plus de performance, Godot propose de créer des <a
+                            href="https://docs.godotengine.org/en/stable/tutorials/scripting/gdextension/what_is_gdextension.html"
+                            target="_blank">modules C++ appelés GDExtension</a>. Si
+                        vous êtes familier avec Unreal Engine, c'est comme lorsque vous créez du code C++ qu'ensuite
+                        vous
+                        appelez en Blueprint.
+                    </p>
+                </li>
+                <li>
+                    <b>Lua</b>
+                    <p>
+                        Le Lua est le premier langage enseigné à Creajeux, c'est avec celui-ci et le framework <a
+                            href="https://www.love2d.org/">LÖVE2D</a> (celui
+                        qui a servi à créer <a href="https://store.steampowered.com/app/2379780/Balatro/"
+                            target="_blank">Balatro</a>) que j'ai créé mes premiers projets de jeux vidéo
+                    </p>
+                </li>
+                <li>
+                    <b>Divers</b>
+                    <p>
+                        J'ai eu de courtes expériences avec de l'HTML/CSS lors de mes premiers cours d'informatique (et
+                        pour
+                        créer ce site), mais également avec du JavaScript au lycée en utilisant <a
+                            href="https://processing.org" target="_blank">Processing</a> et sur la
+                        <a href="https://fr.khanacademy.org/" target="_blank">KhanAcademy</a>. J'ai aussi écrit quelques
+                        scripts Python pour des outils.
+                    </p>
+                </li>
             </ul>
+            <h3>Pattern</h3>
+            Les pattern de programmation que je maitrise:
             <ul>
-                <b>C#</b>
-                <p>
-                    Comme pour le C++, mon expérience avec le C# relève surtout de son utilisation avec un moteur de jeu
-                    associé, ici <a href="https://unity.com/fr" target="_blank">Unity</a>. J'ai également exploré <a
-                        href="https://godotengine.org/download/windows/" target="_blank">Godot .NET</a> pour voir
-                    la différence avec la version standard (GDScript)
-                </p>
+                <li>
+                    <b>Singleton</b>
+                    <p>
+                        Le singleton est une instance unique d'une classe, accessible globlalement. C'est un des
+                        pattern
+                        les plus facile a comprendre et utiliser, mais également facile à abuser. Je cherche
+                        toujours à respecter les principes SOLID dont la "single-responsability", donc mes singleton
+                        restent clairs et concis.
+                    </p>
+                </li>
+                <li>
+                    <b>Observer</b>
+                    <p>
+                        L'observer correspond à système d'évènements où des objets qui ne se connaîssent pas, ne se
+                        référencent pas, arrivent à communiquer par l'intermédiaire d'évènements (<a
+                            href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Events.UnityEvent.html"
+                            target="_blank">event sur Unity</a>,
+                        <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/delegates-and-lambda-functions-in-unreal-engine"
+                            target="_blank">delegate sur Unreal Engine</a>, <a
+                            href="https://docs.godotengine.org/en/stable/getting_started/step_by_step/signals.html"
+                            target="_blank">signals sur Godot</a>). Des objets se
+                        connectent à des évènements, et d'autres objets émettent des messages à tout à ces objets. Cela
+                        évite les dépendances entre les objets et le code spaghettis.
+                    </p>
+                </li>
+                <li>
+                    <b>State machine</b>
+                    <p>
+                        Une state machine permet de découpler du code qui n'est exécuté que dans un certains cas
+                        dans son propre module. C'est très courant dans la locomotion d'un personnage. En effet, le
+                        mouvement peut exister dans différents états: idle, walk, run, jump, crouch...
+                        Le code de locomotion existe dans chacun de ses états et le personnage change de
+                        "current_state" selon les actions du controller (si j'appuie sur la touche de saut et que ma
+                        "current_state" m'autorise de sauter, alors "current_state" devient un JumpState).
+                    </p>
+                </li>
+                <li>
+                    <b>Object pooling</b>
+                    <p>
+                        L'object pooling est un pattern permettant d'optimiser la mémoire en gardant les objets
+                        déjà instanciés pour les recycler. Cela évite les opérations de création et déstruction en
+                        mémoire ce qui peut causer des freezes lorsque beaucoup d'objets apparaîssent et disparraîssent
+                        en succession rapide.
+                    </p>
+                </li>
+                <li>
+                    <b><i>Composition over inheritance</i></b>
+                    <p>
+                        Avec l'expérience, j'ai compris pourquoi on préfère la composition plutôt que l'héritage
+                        dans la programmation orientée objet. Cela rend un code plus concis, concentré et modulaire,
+                        contrairement à l'héritage à outrance où chaque classe dérivée ajoute par-dessus ce qui
+                        existe déjà. L'héritage reste très utile, nottament, créer une classe de base, puis une
+                        génération de dérivée par exemple.
+                    </p>
+                </li>
+                <li>
+                    <b>Interface</b>
+                    <p>
+                        L'interfaçage sert à créer des systèmes flexibles et modulaires dans la
+                        programmation orientée objet (et donc la prog JV). Une interface est une classe qui regroupe
+                        un ensemble de fonctions que chaque classe qui l'implémente doit définir. Les exemples les plus
+                        basiques sont <i>Interactable</i>, <i>Pickable</i>, <i>Damageable</i>. Ces classes disent "cet
+                        objet peut être interagit/récupérer/endommager".
+                    </p>
+                </li>
+                <li>
+                    <b>Data Driven Design</b>
+                    <p>
+                        Le DDD est un design pattern très important pour un code propre et maintenable à mon avis.
+                        Il consiste à séparer les données (data) des systèmes (code). Par exemple, les statistiques du
+                        joueur seront dans leur fichier (cela peut être JSON ou un autre format propre au
+                        moteur: Data Asset pour Unreal Engine, Scriptable Object pour Unity, Resource pour Godot) et le
+                        code qui manipule ces données est le script attaché à l'objet.
+                    </p>
+                </li>
             </ul>
-            <ul>
-                <b>GDScript</b>
-                <p>
-                    Le <a href="https://docs.godotengine.org/fr/4.x/tutorials/scripting/gdscript/gdscript_basics.html"
-                        target="_blank">GDScript</a>
-                    est le langage de scripting du moteur <a href="https://godotengine.org/fr/"
-                        target="_blank">Godot</a>. C'est un langage très accessible, proche du
-                    Python avec quelques éléments rappelant le JavaScript. Il est très performant mais son atout est sa
-                    flexibilité et sa capacité de "hot reload". On peut modifier les scripts au runtime et les
-                    changements sont pris en compte immédiatement en jeu. Super pour de rapides tests et débugages. Si
-                    on a besoin de plus de performance, Godot propose de créer des <a
-                        href="https://docs.godotengine.org/en/stable/tutorials/scripting/gdextension/what_is_gdextension.html"
-                        target="_blank">modules C++ appelés GDExtension</a>. Si
-                    vous êtes familier avec Unreal Engine, c'est comme lorsque vous créez du code C++ qu'ensuite vous
-                    appelez en Blueprint.
-                </p>
-            </ul>
-            <ul>
-                <b>Lua</b>
-                <p>
-                    Le Lua est le premier langage enseigné à Creajeux, c'est avec celui-ci et le framework <a
-                        href="https://www.love2d.org/">LÖVE2D</a> (celui
-                    qui a servi à créer <a href="https://store.steampowered.com/app/2379780/Balatro/"
-                        target="_blank">Balatro</a>) que j'ai créé mes premiers projets de jeux vidéo
-                </p>
-            </ul>
-            <ul>
-                <b>Divers</b>
-                <p>
-                    J'ai eu de courtes expériences avec de l'HTML/CSS lors de mes premiers cours d'informatique (et pour
-                    créer ce site), mais également avec du JavaScript au lycée en utilisant <a
-                        href="https://processing.org" target="_blank">Processing</a> et sur la
-                    <a href="https://fr.khanacademy.org/" target="_blank">KhanAcademy</a>. J'ai aussi écrit quelques
-                    scripts Python pour des outils.
-                </p>
-            </ul>
+            <h2>Compétences de développeur</h2>
+            Les outils et méthodologies que je maîtrise
             <h3>Moteur de jeux</h3>
             <ul>
-                <b>Unreal Engine</b>
-                <p>
-                    J'ai appris Unreal Engine sur la version 4.26 à Creajeux. Depuis, j'ai pu expérimenter Unreal Engine
-                    5 lors de mon passage chez <a href="https://www.enpc-ediser.com/">ENPC-Ediser</a> où j'endossais le
-                    rôle d'expert technique.
-                    <a href=".\projects\ediser.html"><i>voir mon travail sur Simuland chez ENPC-Ediser</i></a>
-                </p>
-                <p>
-                    J'ai surtout utilisé UE 5 lors de ma contribution au jeu <a
-                        href="https://store.steampowered.com/app/2646160/Hiraeth/" target="_blank">Hiraeth</a> et mon
-                    port de mon dernier projet étudiant "Chrome Arena Infinite" de UE 4.26 vers UE 5 nommé "Chrome Arena
-                    Redux".
-                </p>
+                <li>
+                    <b>Unreal Engine</b>
+                    <p>
+                        J'ai appris Unreal Engine sur la version 4.26 à Creajeux. Depuis, j'ai pu expérimenter
+                        Unreal Engine 5 lors de mon passage chez <a href="https://www.enpc-ediser.com/">ENPC-Ediser</a>
+                        où j'endossais le rôle d'expert
+                        technique. <a href=".\projects\ediser.html"><i>voir mon travail sur Simuland chez
+                                ENPC-Ediser</i></a>
+                    </p>
+                    <p>
+                        J'ai surtout utilisé UE 5 lors de ma contribution au jeu <a
+                            href="https://store.steampowered.com/app/2646160/Hiraeth/" target="_blank">Hiraeth</a>
+                        et mon port de mon dernier projet étudiant "Chrome Arena Infinite" de UE 4.26 vers UE 5
+                        nommé "Chrome Arena Redux".
+                    </p>
+                </li>
+                <li>
+                    <b>Godot</b>
+                    <p>
+                        J'ai découvert Godot par hasard en regardant un devlog sur Youtube, je l'ai installé et lancé
+                        pour voir ce que c'était mais je n'avais pas creusé plus que ça à l'époque.
+                        Jusqu'à ce que j'arrive dans le projet DeMETeRE fin 2023 et qu'on me conseil de l'utiliser (le
+                        fiasco des <i>runtime fees</i> d'Unity venait d'éclater). C'était un grand coup de coeur, après
+                        quelques cours et tutoriels, j'ai été rapidement opérationnel pour démarer le projet et j'ai
+                        été bluffé par sa capacité à itérer rapidement, pouvoir modifier le code pendant l'exécution et
+                        même le fait que tout le moteur existe dans son exécutable. Attention, bien que j'en fait
+                        l'éloge, le moteur est loin d'être parfait, nottament autour de l'import des assets, le manque
+                        de streaming des textures et l'impossibilité de créer des interfaces (ce problème est en train
+                        d'être travaillé mais il peut y avoir beaucoup de temps avec qu'il soit résolu, en attendant,
+                        j'ai créé le plugin GDExtension qui s'en rapproche).
+                    </p>
+                </li>
+                <li>
+                    <b>Unity</b>
+                    <p>
+                        J'ai utilisé Unity pour mes premiers projets sur moteur de jeux et lors de mon stage
+                        conventionné chez <a href="projects/gambim.html">Gambi-M</a>.
+                        Unity était mon moteur de choix pour les petits projets, mobiles ou VR. Mais depuis que j'ai
+                        découvert Godot, j'en ai perdu l'intérêt. Ses forces restent tout de même sa communauté immense,
+                        sa librairie d'assets qui accélère significativement le développement et l'intégration de
+                        monétisation (pour le côté business). Attention, je ne cherche pas à le denigré,
+                        l'outil reste parfaitement un bon moteur qui permet de faire des bons jeux et je ne suis pas
+                        fermé à travailler dessus. <i>Un bon artisant ne blâme jamais ses outils.</i>
+                    </p>
+                </li>
             </ul>
+            <h3>Développement...</h3>
             <ul>
-                <b>Godot</b>
-                <p>
-                    Je sais utiliser Godot
-                </p>
-            </ul>
-            <ul>
-                <b>Unity</b>
-                <p>
-                    Je sais utiliser Unity
-                </p>
-            </ul>
-            <h3>Outils/Annexes</h3>
-            <ul>
-                <b>Git</b>
-                <p>
-                    J'utilise Git pour tous mes projets, même solo. Hébergé sur Github ou bien resté en
-                    local, j'utilise Tortoise Git comme GUI. J'aime parfois prendre le risque d'utiliser le
-                    Git Bash pour quelques commandes.
-                </p>
-            </ul>
-            <ul>
-                <b>Blender</b>
-                <p>
-                    Comme j'aime comprendre la totalité du pipeline production, je pense qu'il est important
-                    que je sois familier avec les outils des graphistes 3D. C'est pour cela que j'ai pris
-                    des cours sur GameDev.tv de débutant en graphisme sur Blender. Je m'en suis déjà servi
-                    professionnellement pour inspecter et retoucher des objets.
-                </p>
-            </ul>
-            <ul>
-                <b>Photoshop</b>
-                <p>
-                    J'ai quelques notions de Photoshop pour changer les couleurs d'une image,
-                    redimensionner, ajouter des fx etc... Pratique quand le seul graphiste de l'équipe à
-                    déjà son agenda très rempli.
-                </p>
-            </ul>
-            <ul>
-                <b>Trello/Hack'n'plan</b>
-                <p>
-                    Je pense qu'un projet bien mené commence par une organisation au poil. Il est très
-                    important pour moi de noter, décrire, et estimer les tâches. Au moins pour moi-même.
-                    Lors de mes rôles de lead, j'ai pris très à coeur cette partie. Nous faisions des
-                    réunions SCRUM hebdomadaires afin de nous mettre au point sur les avancées de chacun et
-                    ça permettait aussi de parler de nos difficultés rencontrées. Ensuite nous nous
-                    attribuons et estimons les tâches de la semaine suivante. Ces réunions prenaient entre
-                    30 minutes et 1 heure pour une équipe de 4.
-                </p>
-            </ul>
+                <li>
+                    <b>Gameplay</b>
+                    <p>
 
+                    </p>
+                </li>
+                <li>
+                    <b>IA</b>
+                    <p>
 
+                    </p>
+                </li>
+                <li>
+                    <b>Outils</b>
+                    <p>
+
+                    </p>
+                </li>
+                <li>
+                    <b>UI</b>
+                    <p>
+
+                    </p>
+                </li>
+                <li>
+                    <b>VR</b>
+                    <p>
+                        J'ai découvert la VR lors de mon stage chez <a href="projects/gambim.html">Gambi-M</a>
+                    </p>
+                </li>
+                <li>
+                    <b>Design</b>
+                    <p>
+                        Bien que je ne sois pas <i>game designer</i>, j'accorde une profonde attention à l'expérience
+                        utilisateur et au <i>game feel</i>, à ce qui est <b><i>fun</i></b> dans mon jeu. Je m'applique à
+                        documenter dans un GDD et prévoir comment les différents systèmes progressent et intéragissent
+                        entre eux.
+                    </p>
+                </li>
+            </ul>
+            <h3>Outils annexes</h3>
+            <ul>
+                <li>
+                    <b>Git</b>
+                    <p>
+                        J'utilise Git pour tous mes projets, même solo. Hébergé sur Github ou bien en
+                        local, j'utilise Tortoise Git comme GUI. J'aime parfois prendre le risque d'utiliser le
+                        Git Bash pour quelques commandes.
+                    </p>
+                </li>
+                <li>
+                    <b>Blender</b>
+                    <p>
+                        Comme j'aime comprendre la totalité du pipeline production, je pense qu'il est important
+                        que je sois familier avec les outils des graphistes 3D. C'est pour cela que j'ai pris
+                        des cours sur GameDev.tv de débutant en graphisme sur Blender. Je m'en suis déjà servi
+                        professionnellement pour inspecter et retoucher des objets.
+                    </p>
+                </li>
+                <li>
+                    <b>Photoshop</b>
+                    <p>
+                        J'ai quelques notions de Photoshop pour changer les couleurs d'une image,
+                        redimensionner, ajouter des fx etc... Pratique quand le seul graphiste de l'équipe à
+                        déjà son agenda très rempli.
+                    </p>
+                </li>
+            </ul>
+            <h3>Organisation</h3>
+            <ul>
+                <li>
+                    <b>Méthode Agile et SCRUM</b>
+                    <p>
+                        J'utilise le SCRUM dans tous mes projets, même personnels. J'utilise un logiciel de
+                        planification comme Trello et me donne des tâches à réaliser dans un petit lap de temps (entre 1
+                        semaine à 4 semaine).
+                    </p>
+                    <p>
+                        Dans le milieu professionnel, j'organisais des réunions SCRUM hebdomadaires où, avec la petite
+                        équipe, on faisait le topo de nos avancées, discutait de nos difficultés et estimait nos propres
+                        tâches pour la semaine suivante.
+                    </p>
+                </li>
+                <li>
+                    <b>Trello/Hack'n'plan</b>
+                    <p>
+                        Je pense qu'un projet bien mené commence par une organisation au poil. Il est très
+                        important pour moi de noter, décrire, et estimer les tâches. Au moins pour moi-même.
+                        Lors de mes rôles de lead, j'ai pris très à coeur cette partie. Nous faisions des
+                        réunions SCRUM hebdomadaires afin de nous mettre au point sur les avancées de chacun et
+                        ça permettait aussi de parler de nos difficultés rencontrées. Ensuite nous nous
+                        attribuons et estimons les tâches de la semaine suivante. Ces réunions prenaient entre
+                        30 minutes et 1 heure pour une équipe de 4.
+                    </p>
+                </li>
+                <li>
+                    <b>Documentation</b>
+                    <p>
+                        Il important pour moi de documenter non seulement son code, mais aussi tout le développement du
+                        projet. Mon code est toujours commenter là où je l'estime pertinent. Je note ma progression des
+                        tâches sur mon outil (Trello) et produit et références des schémas UML qui me sert au design et
+                        l'architecture du code.
+                    </p>
+                </li>
+            </ul>
+            <h2>Qualités</h2>
+            Parce qu'il n'y pas que les compétences techniques qui comptent
+            <ul>
+                <li>
+                    Proactif
+                </li>
+                <li>
+                    Ambitieux
+                </li>
+                <li>
+                    Autonome
+                </li>
+                <li>
+                    Passionné
+                </li>
+                <li>
+                    Méthodique
+                </li>
+                <li>
+                    Investi
+                </li>
+                <li>
+                    Esprit d'équipe
+                </li>
+                <li>
+                    Critique
+                    <p>
+                        Il est important de pouvoir critiquer ouvertement et librement le travail de tout membre de
+                        l'équipe, tant que ça reste constructif et dans le respect de chacun. Tout comme je propose ma
+                        critique aux autres, je suis ouvert, voir demande, la critique de la part de mes pairs.
+                    </p>
+                </li>
+            </ul>
         </section>
     </main>
 
