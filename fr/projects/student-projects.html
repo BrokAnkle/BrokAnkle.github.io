@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arnaud Guymont – Game Programmer</title>
     <link rel="stylesheet" href="..\..\assets\css\style.css">
+    <link rel="stylesheet" href="..\..\assets\css\job-timeline.css">
 </head>
 
 <body>
@@ -20,9 +21,146 @@
     </header>
     <main>
         <section class="student-projects">
-            <p>
-                Page projets étudiants
-            </p>
+            <main>
+                <h1>Projets étudiants</h1>
+                <p>Sur cette page vous trouverez mes projets effectués lors de mon cursus à Creajeux.</p>
+                <div class="container">
+                    <div class="timeline">
+                        <!--Timeline item starts-->
+                        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                            <div class="timeline__event__icon"><img src="" width="70" height="70" /></div>
+                            <div class="timeline__event__date">
+                                2022: Troisième Année
+                            </div>
+                            <div class="timeline__event__content">
+                                <div class="timeline__event__title">
+                                    Chrome Arena Infinite
+                                </div>
+                                <div class="timeline__event__description">
+                                    Sur mon dernier projet étudiant, j'ai assumé le rôle de <b>lead programmer</b> dans
+                                    un groupe de 4 programmeurs, 5 graphistes et 1 sound designer. Nous avons décidé de
+                                    faire un jeu de tir en arène dans univers type science-fiction high-tech fortement
+                                    inspiré par Ratchet & Clank, particulièrement ses passages en arène. Cette année là,
+                                    on devait faire nos projets sur Unreal Engine 4.<br />
+                                    J'ai été responsable pour le gameplay principal, c'est-à-dire les contrôles, les
+                                    mouvements, le combat et l'implémentation des animations du personnage-joueur. Pour
+                                    cela j'ai rédigé un GDD qui concentre les lignes directrices du projets et nos
+                                    objectifs. J'ai créé des schémas d'upgrades du personnage et de ses armes.<br />
+                                    <ul>
+                                        <li>
+                                            <b>Mouvements</b><br />
+                                            Les mouvements sont rapides et réactifs, le joueur contrôle un robot de
+                                            combat qui peut courir, sauter (et même double sauter!), utiliser un jetpack
+                                            et un grappin qui s'attache à n'importe quel surface!<br /><br />
+                                        </li>
+                                        <li>
+                                            <b>Combat</b><br />
+                                            Le joueur a par défaut un cyber-fléau et un pistolet laser. Il pourra
+                                            acheter de nouvelles armes dans la boutique avec l'argent (les chromes)
+                                            qu'il récupère en éliminant les ennemis. Chaque armes à 2 modes
+                                            d'utilisations, la secondaire doit être débloquée. Il y a des améliorations
+                                            de statistiques (dégâts, munition, cadence de tir...) mais aussi des
+                                            améliorations de comportement de l'arme (roquette à tête chercheuse, laser
+                                            qui se propage aux ennemis proches...).<br /><br />
+                                        </li>
+                                        <li>
+                                            <b>Animations</b><br />
+                                            Il y a eu un gros travail sur les animations et leur implémentation, un aim
+                                            offset pour lorsqu'on regarde en l'air ou au sol, des blends pour les
+                                            mouvements multidirectionnels, d'autres blends pour mouvements + attaque
+                                            corps à corps, certaines attaques sont <i>root motion</i> (c'est-à-dire que
+                                            c'est l'animation qui prend le contrôle du personnage), des IK pour les
+                                            grosses armes qui sont tenues à 2 mains.<br />
+                                        </li>
+                                    </ul>
+                                    Chrome Arena Infinite est un projet dont je suis très fier, il est beau (merci les
+                                    graphistes), et il est fun grâce à l'ambiance, la musique, les feedbacks etc... Nous
+                                    avons eu la note de 15/20 par un jury de professionnels du jeux-vidéo. Nous avions
+                                    eu l'idée de reprendre le projet et le sortir sur Steam, mais finalement ça ne s'est
+                                    pas fait. J'ai quand même, pour m'entraîner, porté le projet sur Unreal Engine 5 et
+                                    remplacer tout le code blueprint par du C++ et refaire la logique des bots avec le
+                                    BehaviorTree et les EQS.
+                                </div>
+                            </div>
+                        </div>
+                        <!--Timeline item ends-->
+                        <!--Timeline item starts-->
+                        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
+                            <div class="timeline__event__icon"><img src="" width="70" height="70" /></div>
+                            <div class="timeline__event__date">
+                                2021: Deuxième année
+                            </div>
+                            <div class="timeline__event__content">
+                                <div class="timeline__event__title">
+                                    Bacchiatari
+                                </div>
+                                <div class="timeline__event__description">
+                                    Bacchiatari est un projet fait par 4 programmeurs et 4 graphistes sur Unity. Mon
+                                    rôle était gameplay programmeur généraliste.
+                                    <ul>
+                                        <li>
+                                            J'ai créé le système d'inventaire pour que le joueur puisse ramasser ses
+                                            armes puis les sélectionner depuis une roue d'armes.
+                                        </li>
+                                        <li>
+                                            J'ai fait un système de checkpoint au cas où le joueur meurt il recommence à
+                                            cet endroit.
+                                        </li>
+                                        <li>
+                                            J'ai fait un tutorial narratif qui raconte l'histoire des esprits
+                                            élémentaires, demandant l'aide du héro en lui expliquant ce qu'il doit
+                                            faire.
+                                        </li>
+                                        <li>
+                                            J'ai aussi retravaillé tout le système des IA afin qu'il soit plus
+                                            modulaires et facile à mettre en place.
+                                        </li>
+                                        <li>
+                                            J'ai aussi implémenté quelques sons d'ambiance et feedbacks comme le bruit
+                                            d'une cascade d'eau, le feu qui crépite, les ennemis qui subissent des
+                                            dégâts, le joueur qui saute...
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Timeline item ends-->
+                        <!--Timeline item starts-->
+                        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type3">
+                            <div class="timeline__event__icon"><img src="" width="70" height="70" /></div>
+                            <div class="timeline__event__date">2020: Première année</div>
+                            <div class="timeline__event__content">
+                                <div class="timeline__event__title">
+                                    Curse of the Torii
+                                </div>
+                                <div class="timeline__event__description">
+                                    J'ai rejoins un groupe de 6 programmeurs et 3 graphistes pour créer un metroidvania
+                                    2D avec la CSFML. Difficile de répartir les tâches entre 7 programmeurs, surtout
+                                    quand on avait pas vraiment de lead, ni aucune organisation. On m'a demandé de faire
+                                    les contrôles pour joueur à la manette.
+                                </div>
+                            </div>
+                        </div>
+                        <!--Timeline item ends-->
+                        <!--Timeline item starts-->
+                        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                            <div class="timeline__event__icon"><img src="" width="70" height="70" /></div>
+                            <div class="timeline__event__date">2019: Prépa</div>
+                            <div class="timeline__event__content">
+                                <div class="timeline__event__title">
+                                    Welcome to the World
+                                </div>
+                                <div class="timeline__event__description">
+                                    Mon premier projet de groupe à Creajeux était un jeu 2D d'horreur et survie en vue
+                                    de dessus. J'étais parmis 2 autres programmeurs et 2 autres graphistes. J'ai réalisé
+                                    le gameplay principal: contrôles, combat, soin, inventaire...
+                                </div>
+                            </div>
+                        </div>
+                        <!--Timeline item ends-->
+
+                    </div>
+                </div>
         </section>
     </main>
     <footer>

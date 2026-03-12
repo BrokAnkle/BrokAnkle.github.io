@@ -26,52 +26,239 @@
             <p>
                 Sur cette page vous trouverez mes projets persos.
             </p>
-            <section class="breakdown-service">
-                <h2>Breakdown Service</h2>
-                <p>
-                    Breakdown Service est un jeu que j'ai commencé fin 2025 et que j'aimerais amener à son terme car je
-                    pense qu'il a du potentiel. Je suis
-                    encore au tout début de son développement mais un GDD d'une vingtaine de page existe déjà. Les
-                    règles du jeu et son système de progression est déjà défini. Pour des raisons évidentes, je ne veux
-                    pas trop en dire avant que ce ne soit prêt. Il est développé sur Godot mais je ne suis pas fermé à
-                    l'idée de passer sur Unreal Engine si les limites de Godot deviennent trop handicapant.
-                </p>
-            </section>
-            <section class="kitchen-app">
-                <h2>Kitchen App</h2>
-                <p>
-                    Application de gestion de recettes de cuisine fait sur Godot.
-                </p>
-            </section>
-            <section class="taskforce">
-                <h2>Task Force</h2>
-                <p>
-                    Projet de gestion des tâches réalisé sur Godot. Inspiré par Ranch et Bongo Cat
-                </p>
-            </section>
-            <section class="chrome-arena-redux">
-                <h2>Chrome Arena Redux</h2>
-            </section>
+            <ul>
+                <li>
+                    <section class="breakdown-service">
+                        <h2>Breakdown Service</h2>
+                        <p><i>
+                                Jeu <b>en développement</b> solo sur Godot. C'est un job-sim proche de Euro Truck
+                                Simulator.
+                            </i></p>
+                        <p>
+                            Breakdown Service est un jeu que j'ai commencé fin 2025 et que j'aimerais amener à son terme
+                            car je pense qu'il a du potentiel. Je suis encore au tout début de son développement mais un
+                            GDD d'une vingtaine de page existe déjà. Les règles du jeu et son système de progression est
+                            déjà défini. Pour des raisons évidentes, je ne veux pas trop en dire avant que ce ne soit
+                            prêt. Il est développé sur Godot mais je ne suis pas fermé à l'idée de passer sur Unreal
+                            Engine si les limites de Godot deviennent trop handicapant.
+                        </p>
+                    </section>
+                </li>
+                <li>
+                    <section class="kitchen-app">
+                        <h2>Kitchen App</h2>
+                        <p><i>
+                                Application de gestion de recettes de cuisine faite sur Godot. Le développement est
+                                <b>bientôt terminé</b>.
+                            </i></p>
+                        <p>
+                            L'idée de cette app m'est venue lorsque j'ai acheté plusieurs livres de recettes de cuisine
+                            et que je devais les prendre en photos pour les courses et maintenir le livre ouvert pour
+                            cuisiner. Je me doute bien qu'il existe déjà des app pour ça mais je voulais faire la mienne
+                            pour m'entraîner.
+                        </p>
+                        <a href="" target="_blank">Lien (indisponible)</a>
+                    </section>
+                </li>
+                <li>
+                    <section class="taskforce">
+                        <h2>Task Force</h2>
+                        <p><i>
+                                Projet de gestion des tâches réalisé sur Godot. Inspiré par Range et Bongo Cat. Le
+                                développement est <b>terminé</b>.
+                            </i></p>
+                        <p>
+                            Je suis tombé sur le devlog de Range par hasard et j'ai aimé l'idée alors je l'ai acheté.
+                            J'ai un petit bémol cependant: l'app est toujours en plein écran. Plus tôt dans l'année
+                            j'avais Bango Cat sur mon bureau. L'idée m'est donc venue de faire comme Range: une app de
+                            gestion de temps de travail, mais c'est une petite fenêtre flottante toujours visible.
+                            J'aurais aimé le gamifié un petit peu et rendre l'interface plus jolie mais ce n'est pas
+                            dans mes plans.
+                        </p>
+                        <a href="" target="_blank">Lien (indisponible)</a>
+                    </section>
+                </li>
+                <li>
+                    <section class="chrome-arena-redux">
+                        <h2>Chrome Arena Redux</h2>
+                        <p><i>
+                                Port de Chrome Arena Infinite, mon dernier projet étudiant à Creajeux, d'Unreal Engine 4
+                                vers Unreal Engine 5. Le projet est <b>90% terminé</b> mais en pause.
+                            </i></p>
+                        <p>
+                            Pour m'entraîner sur Unreal Engine 5, j'ai décidé de porter mon dernier projet étudiant
+                            depuis UE4, et de revoir tout le projet pour l'optimiser et éventuellement le mettre à
+                            disposition pour être joué gratuitement.<br />
+                            J'ai réorganisé tous les dossiers du projet qui était un véritable chaos (ça m'a pris des
+                            jours) puis refait tous les matériaux pour utiliser moins d'instance unique. Il existe
+                            qu'une poignée de matériaux dans le projet maintenant, et les mesh utilisent des
+                            <i>materials instances</i>. Tout le code blueprint (quasiment tout le jeu) a été réécrit en
+                            C++. La logique des bots n'est plus dans leur <i>AIController</i> mais à la place j'utilise
+                            des BehaviorTree et des EQS pour une logique plus performante, maintenable et surtout moins
+                            bugé!
+                        </p>
+                        <p>
+                            J'ai documenté toute l'aventure sur <a
+                                href="https://www.youtube.com/playlist?list=PLFpS-1ONm2brcqPPt0_XCtE7vaBAJBYQy"
+                                target="_blank">Youtube</a>.
+                        </p>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/oXBs04BPg9k?si=LPN6saaC7sl7m-aC"
+                            title="Devlog Chrome Arena Redux" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br />
+                        <a href="" target="_blank">Lien (indisponible)</a>
+                    </section>
+                </li>
+            </ul>
             <section class="modules">
                 <h2>Modules</h2>
                 <p>Les modules sont des systèmes que j'ai créé durant mes projets dont j'estime sont importants et
                     peuvent être réutilisé sur les autres projets.</p>
-                <section class="settings">
-                    <h3>Settings</h3>
-                    <p>
-                        Système de paramètres sur Godot
-                    </p>
-                </section>
-                <section class="textures">
-                    <h3>Sélection de résolution de textures sur Godot</h3>
-                    <p>
-                        Etonnament, Godot ne dispose pas par défaut de paramètres de résolution des textures. Chose qui
-                        a failli nous couter dans DeMETeRE. Ne trouvant pas d'information nulle part pour régler à
-                        l'exécution la résolution des textures des matériaux, j'ai créé mon propre système.
-                    </p>
-                </section>
+                <ul>
+                    <li>
+                        <section class="settings">
+                            <h3>Settings</h3>
+                            <p><i>
+                                    Système de paramètres sur Godot
+                                </i></p>
+                            <p>
+                                Pendant mes projets chez <a href="demetere.html">DeMETeRE</a>, j'ai créé un système
+                                de paramètres utilisateurs facile à implémenter et utiliser. Les paramètres peuvent même
+                                être réécrit sur le fichier accessible à l'utilisateur.
+                            </p>
+                            <a href="" target="_blank">Lien (indisponible)</a>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="textures">
+                            <h3>Sélection de résolution de textures sur Godot</h3>
+                            <p>
+                                Étonnament, Godot ne dispose pas par défaut de paramètres de résolution des textures.
+                                Chose qui a failli nous couter dans DeMETeRE. Ne trouvant pas d'information nulle part
+                                pour régler à l'exécution la résolution des textures des matériaux, j'ai créé mon propre
+                                système.
+                            </p>
+                            <a href="" target="_blank">Lien (indisponible)</a>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="wheel">
+                            <h3>Volant sur Godot</h3>
+                            <p>
+                                Système de contrôle avec un volant sur Godot.
+                            </p>
+                            <a href="" target="">Lien (indisponible)</a>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="interface">
+                            <h3>GDInterface</h3>
+                            <p>
+                                Système permettant d'implémenter des "interfaces" en GDScript sur Godot.
+                            </p>
+                            <p>
+                                Parfois en allant dormir je cogite un peu trop. Parfois ça me donne des idées. C'est de
+                                là qu'est venu GDInterface. Bien que je l'appelle "interface" c'est plus des
+                                <b>traits</b> qui sont <b>utilisés</b> par les objets. GDInterface vient au milieu pour
+                                vérifier et exécuter ce trait sans <b><i>typecheck</i></b>.
+                            </p>
+                            <p>
+                                J'ai fait un <a href="https://youtu.be/iD7rwzIVd0k" target="_blank">tuto sur Youtube</a>
+                                qui explique comment ça fonctionne. <a href="https://github.com/BrokAnkle/GDInterface"
+                                    target="_blank">Le repo Github</a> est bien documenté aussi.
+                            </p>
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/iD7rwzIVd0k?si=W1845K4hBIMukcEI"
+                                title="GDInterface tutorial" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <a href="https://godotengine.org/asset-library/asset/4363" target="_blank">Lien</a>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="airlock">
+                            <h3>Plugin de SAS modulaire</h3>
+                            <p>
+                                Plugin Unreal Engine pour créer des modules de SAS préssurisé facilement.
+                            </p>
+                            <p>
+                                J'ai contribué généreusement à jeu Hiraeth, un jeu d'exploration et de survie dans
+                                l'espace sur une planète déserte. Le développeur m'a demandé de créer un système porte
+                                modulaire type SAS pressurisé. J'ai décidé d'en faire un plugin disponible sur Github.
+                            </p>
+                            <p>Il existe une <a
+                                    href="https://www.youtube.com/playlist?list=PLFpS-1ONm2bpRavTB7qSoWQfNa0GxSDFx"
+                                    target="_blank">playlist sur Youtube</a> pour s'en servir</p>
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/QiQBejr67RE?si=C23L08TEWQebyYAQ"
+                                title="Showcase of the Airlock system" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </section>
+                    </li>
+                </ul>
             </section>
-
+            <section class="bonus">
+                <h2>Bonus</h2>
+                <p>Des petits projets pas forcément finis, souvent pour tester des fonctionnalités.</p>
+                <ul>
+                    <li>
+                        <section class="dev-test">
+                            <h3>
+                                Godot Survivor: Dev Test
+                            </h3>
+                            <p>
+                                Test pour développeur junior fait sur Godot pour le recrutement sur le projet DeMETeRE.
+                                Il demande au candidat de réparer les bugs, optimiser le code, et ajouter des
+                                fonctionnalités. Le jeu en lui-même est aussi fun.
+                            </p>
+                            <iframe width="552" height="167" frameborder="0" src="https://itch.io/embed/2488986"><a
+                                    href="https://brokankle.itch.io/godot-survivor">Godot Survivor by
+                                    BrokAnkle</a></iframe>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="inventory">
+                            <h3>
+                                Système d'inventaire
+                            </h3>
+                            <p>
+                                Pour un projet de jeu, je voulais créer un inventaire en grille avec du drag and drop.
+                            </p>
+                            <a href="" target="_blank">Lien (indisponible)</a>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="chatbot">
+                            <h3>
+                                Chatbot
+                            </h3>
+                            <p>
+                                Pendant que j'apprenais Godot, j'ai pris un cours pour intégrer ChatGPT dans un jeu et
+                                dialoguer avec. Malheureusement l'API a bien changé ça renvoi une erreur alors j'ai
+                                essayé de le reproduire avec DeepSeek. Ca fonctionnait assez bien jusqu'à ce que l'IA se
+                                mette à ne plus répondre après quelques échanges. Je n'ai pas creusé plus que ça par la
+                                suite.
+                            </p>
+                            <a href="" target="_blank">Lien (indisponible)</a>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="colorblind">
+                            <h3>
+                                Correction de couleur pour daltonien
+                            </h3>
+                            <p>
+                                Durant le projet DeMETeRE, nous devions maximiser l'accessibilité des expériences VR. La
+                                question du daltonisme s'est vite posée, alors j'ai créer un filtre de correction de
+                                couleur pouvant être sélectionné via les paramètres.
+                            </p>
+                            <a href="" target="_blank">Lien (indisponible)</a>
+                        </section>
+                    </li>
+                </ul>
+            </section>
         </section>
     </main>
     <footer>
