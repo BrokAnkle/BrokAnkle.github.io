@@ -103,25 +103,24 @@
                     <b>Singleton</b>
                     <p>
                         Le singleton est une instance unique d'une classe, accessible globlalement. C'est un des
-                        pattern
-                        les plus facile a comprendre et utiliser, mais également facile à abuser. Je cherche
-                        toujours à respecter les principes SOLID dont la "single-responsability", donc mes singleton
-                        restent clairs et concis.
+                        pattern les plus facile à comprendre et utiliser, mais tout aussi facile à abuser. Je cherche
+                        toujours à respecter les principes <b>SOLID</b> dont la <i>"single-responsability"</i>, donc mes
+                        singleton restent clairs et concis.
                     </p>
                 </li>
                 <li>
                     <b>Observer</b>
                     <p>
-                        L'observer correspond à système d'évènements où des objets qui ne se connaîssent pas, ne se
-                        référencent pas, arrivent à communiquer par l'intermédiaire d'évènements (<a
+                        L'<i>observer</i> correspond à système d'évènements où des objets qui ne se connaîssent pas, ne
+                        se référencent pas, arrivent à communiquer par l'intermédiaire d'évènements (<a
                             href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Events.UnityEvent.html"
                             target="_blank">event sur Unity</a>,
                         <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/delegates-and-lambda-functions-in-unreal-engine"
                             target="_blank">delegate sur Unreal Engine</a>, <a
                             href="https://docs.godotengine.org/en/stable/getting_started/step_by_step/signals.html"
-                            target="_blank">signals sur Godot</a>). Des objets se
-                        connectent à des évènements, et d'autres objets émettent des messages à tout à ces objets. Cela
-                        évite les dépendances entre les objets et le code spaghettis.
+                            target="_blank">signals sur Godot</a>). Des objets se connectent à des évènements, et
+                        d'autres objets émettent des messages à tout à ces objets. Cela évite les dépendances entre les
+                        objets et le code spaghettis.
                     </p>
                 </li>
                 <li>
@@ -129,7 +128,7 @@
                     <p>
                         Une state machine permet de découpler du code qui n'est exécuté que dans un certains cas
                         dans son propre module. C'est très courant dans la locomotion d'un personnage. En effet, le
-                        mouvement peut exister dans différents états: idle, walk, run, jump, crouch...
+                        mouvement peut exister dans différents états: <i>idle, walk, run, jump, crouch</i>...
                         Le code de locomotion existe dans chacun de ses états et le personnage change de
                         "current_state" selon les actions du controller (si j'appuie sur la touche de saut et que ma
                         "current_state" m'autorise de sauter, alors "current_state" devient un JumpState).
@@ -140,8 +139,8 @@
                     <p>
                         L'object pooling est un pattern permettant d'optimiser la mémoire en gardant les objets
                         déjà instanciés pour les recycler. Cela évite les opérations de création et déstruction en
-                        mémoire ce qui peut causer des freezes lorsque beaucoup d'objets apparaîssent et disparraîssent
-                        en succession rapide.
+                        mémoire ce qui peut causer des <i>freezes</i> (aussi appelés <i><b>stutters</b></i>) lorsque
+                        beaucoup d'objets apparaîssent et disparraîssent en succession rapide.
                     </p>
                 </li>
                 <li>
@@ -150,7 +149,7 @@
                         Avec l'expérience, j'ai compris pourquoi on préfère la composition plutôt que l'héritage
                         dans la programmation orientée objet. Cela rend un code plus concis, concentré et modulaire,
                         contrairement à l'héritage à outrance où chaque classe dérivée ajoute par-dessus ce qui
-                        existe déjà. L'héritage reste très utile, nottament, créer une classe de base, puis une
+                        existe déjà. L'héritage reste très utile, nottament, pour créer une classe de base, puis une
                         génération de dérivée par exemple.
                     </p>
                 </li>
@@ -158,10 +157,10 @@
                     <b>Interface</b>
                     <p>
                         L'interfaçage sert à créer des systèmes flexibles et modulaires dans la
-                        programmation orientée objet (et donc la prog JV). Une interface est une classe qui regroupe
-                        un ensemble de fonctions que chaque classe qui l'implémente doit définir. Les exemples les plus
-                        basiques sont <i>Interactable</i>, <i>Pickable</i>, <i>Damageable</i>. Ces classes disent "cet
-                        objet peut être interagit/récupérer/endommager".
+                        programmation orientée objet (et donc la prog JV). Une interface est une classe <b>abstraite</b>
+                        qui regroupe un ensemble de fonctions que chaque classe qui l'implémente doit définir. Les
+                        exemples les plus courants sont <i>Interactable</i>, <i>Pickable</i>, <i>Damageable</i>. Ces
+                        classes disent "je peux être interagit/récupéré/endommagé".
                     </p>
                 </li>
                 <li>
@@ -218,7 +217,30 @@
                         autour de l'import des assets, le manque de streaming des textures et l'impossibilité de créer
                         des interfaces (ce problème est en train d'être travaillé mais il peut y avoir beaucoup de temps
                         avec qu'il soit résolu, en attendant, j'ai créé le <a href="https://youtu.be/iD7rwzIVd0k"
-                            target="_blank">plugin GDExtension</a> qui s'en rapproche).
+                            target="_blank">plugin GDExtension</a> qui s'en rapproche).<br />
+                        J'entend souvent des gens s'en moquer parce qu'il n'y aurait pas de <b>*vrais*</b> jeux à succès
+                        fait avec Godot alors voici une petite liste non-exhaustive: <a
+                            href="https://store.steampowered.com/app/1942280/Brotato/" target="_blank">Brotato</a>, <a
+                            href="https://store.steampowered.com/app/1963610/Road_to_Vostok/" target="_blank">Road to
+                            Vostok</a>, <a href="https://store.steampowered.com/app/2868840/Slay_the_Spire_2/"
+                            target="_blank">Slay the Spire 2</a>, <a
+                            href="https://store.steampowered.com/app/2956040/PVKK_Planetenverteidigungskanonenkommandant/"
+                            target="_blank">PVKK</a>, <a
+                            href="https://store.steampowered.com/app/1321440/Cassette_Beasts/" target="_blank">Cassette
+                            Beasts</a>, <a href="https://store.steampowered.com/app/1388770/Cruelty_Squad/"
+                            target="_blank">Cruelty Squad</a>, <a
+                            href="https://store.steampowered.com/app/1762010/Wrought_Flesh/" target="_blank">Wrought
+                            Flesh</a>, <a href="https://store.steampowered.com/app/2124780/Endoparasitic/"
+                            target="_blank">Endoparasitic</a>, <a
+                            href="https://store.steampowered.com/app/3970690/Project_Shadowglass/"
+                            target="_blank">Project
+                            Shadowglass</a>, <a href="https://store.steampowered.com/app/2218750/Halls_of_Torment/"
+                            target="_blank">Halls of
+                            Torment</a>, <a href="https://store.steampowered.com/app/1637320/Dome_Keeper/"
+                            target="_blank">Dome Keeper</a>. <a
+                            href="https://steamdb.info/tech/Engine/Godot/?sort=peak_desc" target="_blank">source</a>
+                        Battlefield 6 utilise Godot pour son système de contenu généré par la communauté
+                        "<b>Portal</b>".
                     </p>
                 </li>
                 <li>
@@ -229,7 +251,7 @@
                         Unity était mon moteur de choix pour les petits projets, mobiles ou VR. Mais depuis que j'ai
                         découvert Godot, j'en ai perdu l'intérêt. Ses forces restent tout de même sa communauté immense,
                         sa librairie d'assets qui accélère significativement le développement et l'intégration de
-                        monétisation (pour le côté business). Attention, je ne cherche pas à le denigré,
+                        monétisation (pour le côté business). Attention, je ne cherche pas à le denigrer,
                         l'outil reste parfaitement un bon moteur qui permet de faire des bons jeux et je ne suis pas
                         fermé à travailler dessus. <i>Un bon artisant ne blâme jamais ses outils.</i>
                     </p>
@@ -242,49 +264,50 @@
                     <p>
                         Tout programmeur en jeux vidéo commence par le gameplay, parce que sans gameplay, il y a pas de
                         jeu. Cela consiste à l'interaction entre les entités, les actions du joueur... bref, ce que le
-                        joueur peut voir et ressentir directement en jeu.
+                        joueur peut faire et ressentir directement en jeu.
                     </p>
                 </li>
                 <li>
                     <b>IA</b>
                     <p>
                         Personnages non joueurs comme les bots ennemis et alliés. J'aime beaucoup le système de
-                        Behavior Tree et le GOAP (Goal Oriented Action Planing) pour créer des bots "intelligents" de
-                        manière intuitive.
+                        <b>Behavior Tree</b> et le <b><a href="https://goap.crashkonijn.com/readme/theory"
+                                target="_blank">GOAP</a></b> (Goal Oriented Action Planing) pour créer des bots
+                        "intelligents" de manière intuitive.
                     </p>
                     <p>
                         Je peux profiter de ce point pour parler de l'IA générative type LLM. Je m'en sers très peu lors
                         de l'écriture du code, les quelques de fois où j'ai essayé, le code généré ne correspond pas
                         vraiment à ce que je cherche, voir, est plein d'erreurs. Je m'en sers pour vérifier lorsque j'ai
                         un doute, ou, lorsque j'attaque un problème nouveau pour moi, je peux demander une analyse et un
-                        point de départ.
-                        Il y a certains codes généré par IA que j'ai utilisé dans mon travail, lors de mon expérience
-                        sur le <a href="projects/demetere.html">Projet DeMETeRE</a>, j'avais besoin de controler un
-                        objet avec une grande précision en utilisant un joystick. Je lui ai donc demandé les meilleurs
-                        deadzone possible pour ce problème et j'ai adapté son pseudo-code à mon projet.
+                        point de départ. Il y a certains codes générés par IA que j'ai utilisé dans mon travail, lors de
+                        mon expérience sur le <a href="projects/demetere.html">Projet DeMETeRE</a>, j'avais besoin de
+                        controler un objet avec une grande précision en utilisant un joystick. Je lui ai donc demandé
+                        les meilleurs système de <i>deadzone</i> possible pour ce problème et j'ai adapté son
+                        pseudo-code à mon projet.
                     </p>
                 </li>
                 <li>
                     <b>Outils</b>
                     <p>
-                        La programmation d'outils est quelque choses que j'ai appris à apprécié l'importance. Lorsqu'on
+                        La programmation d'outils est quelque chose dont j'ai appris à apprécié l'importance. Lorsqu'on
                         travaille sur un projet qui va nous prendre des années, et où on va répéter certaines actions au
                         cours de plusieurs mois, on est souvent sujet à des erreurs/oublis. J'aime bien créer des outils
-                        pour faciliter/automatiser le développement du projet.
-                        Des outils peuvent aussi combler un manque de fonctionnalités du moteur.
+                        pour faciliter/automatiser le développement du projet. Les outils peuvent aussi combler une
+                        fonctionnalité manquante du moteur.
                     </p>
                 </li>
                 <li>
                     <b>Systèmes</b>
                     <p>
-                        La création de systèmes détaillés et complexes qui seront utilisés par les programmeur gameplay
-                        et designer.
+                        La création de systèmes détaillés et complexes qui seront utilisés par les programmeurs gameplay
+                        et <i>designers</i>.
                         Cela peut être un système d'inventaire avec poids des objets, tri, différentes tailles dans la
                         grille (ou depuis peu, on voit apparaître des inventaires physiques comme dans <a
                             href="https://store.steampowered.com/app/1326470/Sons_Of_The_Forest/" target="_blank">Sons
                             of the Forest</a>), etc...
                         Ou encore, un système de dialogues avec différents choix qui mène à différentes conclusions et
-                        évnènements.
+                        évnènements...
                     </p>
                 </li>
                 <li>
@@ -367,11 +390,7 @@
                     <p>
                         Je pense qu'un projet bien mené commence par une organisation au poil. Il est très
                         important pour moi de noter, décrire, et estimer les tâches. Au moins pour moi-même.
-                        Lors de mes rôles de lead, j'ai pris très à coeur cette partie. Nous faisions des
-                        réunions SCRUM hebdomadaires afin de nous mettre au point sur les avancées de chacun et
-                        ça permettait aussi de parler de nos difficultés rencontrées. Ensuite nous nous
-                        attribuons et estimons les tâches de la semaine suivante. Ces réunions prenaient entre
-                        30 minutes et 1 heure pour une équipe de 4.
+                        Lors de mes rôles de lead, j'ai pris très à coeur cette partie.
                     </p>
                 </li>
                 <li>
@@ -390,8 +409,8 @@
                 <li>
                     Proactif
                     <P>
-                        Le contraire de passif, je cherche toujours à apporter de nouvelles idées et aider comme se peut
-                        mon équipe.
+                        Je suis le contraire de passif, je cherche toujours à apporter de nouvelles idées et aider comme
+                        je peux mon équipe.
                     </P>
                 </li>
                 <li>
@@ -413,8 +432,8 @@
                 <li>
                     Passionné
                     <p>
-                        J'ai appris récemment que beaucoup de développeurs sont de le secteur parce que ça paye bien et
-                        ça demande pas trop d'effort ce qui m'a beaucoup étonné car ma vision est toute autre: je
+                        Il paraît que beaucoup de développeurs sont dans le secteur parce que ça paye bien et
+                        ça demande pas trop d'effort ce qui m' étonne beaucoup car ma vision est toute autre: je
                         redouble toujours d'effort pour créer des expériences intuitives et satisfaisantes, et je ne
                         cours pas apprès l'argent. Tant que je peux vivre décement sans me soucier du mois suivant, je
                         suis satisfait.
@@ -439,8 +458,8 @@
                     Esprit d'équipe
                     <p>
                         On peut être un bon programmeur, un "star codeur" même, mais si on est une personne désagréable,
-                        qui refuse d'aider ses collègues et qui mal à l'aise son équipe, alors on sera un boulet pour le
-                        projet. Le sport collectif et mon service à l'armée m'a appris qu'une équipe soudée peut
+                        qui refuse d'aider ses collègues et qui met mal à l'aise son équipe, alors on sera un boulet
+                        pour le projet. Le sport collectif et mon service à l'armée m'a appris qu'une équipe soudée peut
                         soulever des montagnes.
                     </p>
                 </li>
