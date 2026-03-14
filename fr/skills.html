@@ -13,8 +13,27 @@
         <nav>
             <a href="..\index.html">Accueil</a>
             <a href="about.html">À propos</a>
-            <a href="experiences.html">Réalisations</a>
-            Compétences
+            <link rel="stylesheet" href="..\assets\css\dropdown.css">
+            <div class="dropdown">
+                <button class="dropbtn"><a href="experiences.html">Réalisations</a></button>
+                <div class="dropdown-content">
+                    <a href="experiences.html">Professionnelles</a>
+                    <a href="projects\personal-projects.html">Personnelles</a>
+                    <a href="projects\student-projects.html">Etudiantes</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn-current">Compétences</button>
+                <div class="dropdown-content">
+                    <a href="#languages">Programmation: langages</a>
+                    <a href="#patterns">Programmation: patterns</a>
+                    <a href="#engines">Développement: moteurs</a>
+                    <a href="#specialties">Développement: spécialités</a>
+                    <a href="#tools">Développement: outils</a>
+                    <a href="#organisation">Développement: organisation</a>
+                    <a href="#qualities">Qualités</a>
+                </div>
+            </div>
             <a href="..\en\index.html">🌐</a>
         </nav>
     </header>
@@ -23,7 +42,7 @@
             <h1>Compétences</h1>
             <h2>Compétences de programmation</h2>
             Ce que je sais faire avec du code
-            <h3>Langages de programmation</h3>
+            <h3 id="languages">Langages de programmation</h3>
             <ul>
                 <li>
                     <b>C/C++</b>
@@ -96,7 +115,7 @@
                     </p>
                 </li>
             </ul>
-            <h3>Pattern</h3>
+            <h3 id="patterns">Pattern</h3>
             Les pattern de programmation que je maitrise:
             <ul>
                 <li>
@@ -182,7 +201,7 @@
             </ul>
             <h2>Compétences de développeur</h2>
             Les outils et méthodologies que je maîtrise
-            <h3>Moteur de jeux</h3>
+            <h3 id="engines">Moteur de jeux</h3>
             <ul>
                 <li>
                     <b>Unreal Engine</b>
@@ -257,7 +276,7 @@
                     </p>
                 </li>
             </ul>
-            <h3>Développement...</h3>
+            <h3 id="specialties">Spécialités</h3>
             <ul>
                 <li>
                     <b>Gameplay</b>
@@ -338,7 +357,7 @@
                     </p>
                 </li>
             </ul>
-            <h3>Outils annexes</h3>
+            <h3 id="tools">Outils annexes</h3>
             <ul>
                 <li>
                     <b>Git</b>
@@ -370,7 +389,7 @@
                     </p>
                 </li>
             </ul>
-            <h3>Organisation</h3>
+            <h3 id="organisation">Organisation</h3>
             <ul>
                 <li>
                     <b>Méthode Agile et SCRUM</b>
@@ -403,7 +422,7 @@
                     </p>
                 </li>
             </ul>
-            <h2>Qualités</h2>
+            <h2 id="qualities">Qualités</h2>
             Parce qu'il n'y pas que les compétences techniques qui comptent
             <ul>
                 <li>

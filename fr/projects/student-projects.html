@@ -14,8 +14,27 @@
         <nav>
             <a href="..\..\index.html">Accueil</a>
             <a href="..\about.html">À propos</a>
-            <a href="..\experiences.html">Réalisations</a>
-            <a href="..\skills.html">Compétences</a>
+            <link rel="stylesheet" href="..\..\assets\css\dropdown.css">
+            <div class="dropdown">
+                <button class="dropbtn-current">Réalisations</button>
+                <div class="dropdown-content">
+                    <a href="..\experiences.html">Professionnelles</a>
+                    <a href="personal-projects.html">Personnelles</a>
+                    <div class="current">Etudiantes </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="..\skills.html">Compétences</a></button>
+                <div class="dropdown-content">
+                    <a href="skills.html#languages">Programmation: langages</a>
+                    <a href="skills.html#patterns">Programmation: patterns</a>
+                    <a href="skills.html#engines">Développement: moteurs</a>
+                    <a href="skills.html#specialties">Développement: spécialités</a>
+                    <a href="skills.html#tools">Développement: outils</a>
+                    <a href="skills.html#organisation">Développement: organisation</a>
+                    <a href="skills.html#qualities">Qualités</a>
+                </div>
+            </div>
             <a href="..\..\en\projects\gambim.html">🌐</a>
         </nav>
     </header>

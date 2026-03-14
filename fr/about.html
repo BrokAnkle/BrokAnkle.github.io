@@ -14,8 +14,27 @@
         <nav>
             <a href="..\index.html">Accueil</a>
             À propos
-            <a href="experiences.html">Réalisations</a>
-            <a href="skills.html">Compétences</a>
+            <link rel="stylesheet" href="..\assets\css\dropdown.css">
+            <div class="dropdown">
+                <button class="dropbtn"><a href="experiences.html">Réalisations</a></button>
+                <div class="dropdown-content">
+                    <a href="experiences.html">Professionnelles</a>
+                    <a href="projects\personal-projects.html">Personnelles</a>
+                    <a href="projects\student-projects.html">Etudiantes</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="skills.html">Compétences</a></button>
+                <div class="dropdown-content">
+                    <a href="skills.html#languages">Programmation: langages</a>
+                    <a href="skills.html#patterns">Programmation: patterns</a>
+                    <a href="skills.html#engines">Développement: moteurs</a>
+                    <a href="skills.html#specialties">Développement: spécialités</a>
+                    <a href="skills.html#tools">Développement: outils</a>
+                    <a href="skills.html#organisation">Développement: organisation</a>
+                    <a href="skills.html#qualities">Qualités</a>
+                </div>
+            </div>
             <a href="..\en\index.html">🌐</a>
         </nav>
     </header>
