@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnaud Guymont – Game Programmer</title>
+    <link rel="stylesheet" href="..\..\assets\css\style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="..\..\index.html">Home</a>
+            <a href="..\about.html">About</a>
+            <link rel="stylesheet" href="..\..\assets\css\dropdown.css">
+            <div class="dropdown">
+                <button class="dropbtn-current">Projects</button>
+                <div class="dropdown-content">
+                    <a href="..\experiences.html">Professionals</a>
+                    <div class="current">Personals</div>
+                    <a href="student-projects.html">Student</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="skills.html">Skills</a></button>
+                <div class="dropdown-content">
+                    <a href="..\skills.html#languages">Programming: languages</a>
+                    <a href="..\skills.html#patterns">Programming: patterns</a>
+                    <a href="..\skills.html#engines">Development: engines</a>
+                    <a href="..\skills.html#specialties">Development: specialties</a>
+                    <a href="..\skills.html#tools">Development: outils</a>
+                    <a href="..\skills.html#organisation">Development: organisation</a>
+                    <a href="..\skills.html#qualities">Qualities</a>
+                </div>
+            </div>
+            <a href="..\..\en\projects\personal-projects.html">🌐</a>
+        </nav>
+    </header>
+    <main>
+        <section class="personal-projects">
+            <p>
+                <a href="..\experiences.html">← back</a>
+            </p>
+            <h1>
+                Projets Personnels
+            </h1>
+            <p>
+                On this page you'll find my personnal projects.
+            </p>
+            <ul>
+                <li>
+                    <section class="breakdown-service">
+                        <h2>Breakdown Service</h2>
+                        <p><i>
+                                Game <b>in development</b> solo on Godot. It's a job-sim close to Euro Truck Simulator.
+                            </i></p>
+                        <p>
+                            Breakdown service is a game that I started late 2025 and I'd like bring it to the finish
+                            line because I think it has potential. I'm still at the beggining of its development but a
+                            20 pages GDD exists already. The game rulesand its progression system are already defined.
+                            For obvious reasons, I don't want to say too much before it's ready. It's developed on Godot
+                            but I'm not closed to the idea of going to Unreal Engine if Godot's limitation brings too
+                            much difficulties.
+                        </p>
+                    </section>
+                </li>
+                <li>
+                    <section class="kitchen-app">
+                        <h2>Kitchen App</h2>
+                        <p><i>
+                                Cooking recipe management app made on Godot. The development is <b>almost done</b>.
+                            </i></p>
+                        <p>
+                            The idea of this app came to me when I bought multiples cooking recipes and I had to take
+                            photos for the ingredients lists and keep the book open to cook. I'm aware that app like
+                            this already exist but I wanted to make my own to train at UI and external resources
+                            management, that we can save, deleted and edit.
+                        </p>
+                        <video width="400" height="200" title="kitchen-app demo" controls>
+                            <source src="..\..\assets\vid\kitchen-app.mp4">
+                            </src>
+                        </video>
+                    </section>
+                </li>
+                <li>
+                    <section class="taskforce">
+                        <h2>Task Force</h2>
+                        <p><i>
+                                Task manager project made on Godot. Inspired by Range and Bongo Cat. The development is
+                                <b>done</b>.
+                            </i></p>
+                        <p>
+                            I came across a <a href="https://youtu.be/R9HxOKoo3hE?si=xKvlsNbwryjRl-59"
+                                target="_blank">Range devlog</a> by chance and liked the idea so I bought it. I have a
+                            small problem however with it: the app is always full screen. Earlier in the year I had
+                            <a href="https://store.steampowered.com/app/3419430/Bongo_Cat/" target="_blank">Bongo
+                                Cat</a> on my desktop. The idea therefore came to me to do like Range: a task time
+                            management app, but it's a small floating window that is always on top. I would have liked
+                            to gamify it a little bit and make the interface prettier but it's not in my plans.
+                        </p>
+                        <video width="400" height="200" title="kitchen-app demo" controls>
+                            <source src="..\..\assets\vid\task-force.mp4">
+                            </src>
+                        </video>
+                    </section>
+                </li>
+                <li>
+                    <section class="chrome-arena-redux">
+                        <h2>Chrome Arena Redux</h2>
+                        <p><i>
+                                Port of <a href="student-projects.html#chrome-arena-infinite">Chrome Arena Infinite, my
+                                    last student project at Creajeux</a>, from Unreal Engine 4 to Unreal Engine 5. The
+                                project is <b>90% done</b> but on hold.
+                            </i></p>
+                        <p>
+                            To train myself on Unreal Engine 5, I decided to port my last student project from UE4, and
+                            to rework the whole project to optimize it and eventually make it available to be played for
+                            free.<br />
+                            I reorganized all the files of the project which was a real chaos (it took me days) then
+                            redo all the materials to use less single instance. There are only a handful of materials in
+                            the project now, and the meshes use materials instances. All the blueprint code (almost the
+                            entire game) has been rewritten in C++. The AI logic is no longer in their AIController but
+                            instead I used BehaviorTree and EQS for a more efficient, maintenable and especially less
+                            buggy code!
+                        </p>
+                        <p>
+                            I documented the whole adventure on <a
+                                href="https://www.youtube.com/playlist?list=PLFpS-1ONm2brcqPPt0_XCtE7vaBAJBYQy"
+                                target="_blank">Youtube</a>.
+                        </p>
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/oXBs04BPg9k?si=LPN6saaC7sl7m-aC"
+                            title="Devlog Chrome Arena Redux" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br />
+                        <a href="" target="_blank">Link (unavailable)</a>
+                    </section>
+                </li>
+            </ul>
+            <section class="modules">
+                <h2>Modules</h2>
+                <p>
+                    Modules are systems that I created in my projects that I consider importants and can be reused on
+                    other projects.</p>
+                <ul>
+                    <li>
+                        <section class="settings">
+                            <h3>Settings</h3>
+                            <p><i>
+                                    Settings system on Godot
+                                </i></p>
+                            <p>
+                                During my projects at <a href="demetere.html">DeMETeRE</a>, I created a user settings
+                                system easy to implement and use. Settings can even be rewritten in the user accessible
+                                file.
+                            </p>
+                            <a href="" target="_blank">Link (unavailable)</a>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="engine">
+                            <h3>Godot Engine modification</h3>
+                            <p><i>
+                                    Addition of an editor setting from source code
+                                </i></p>
+                            <p>
+                                A frustration I often had with Godot is that the projects are by default in the
+                                "Documents" folder. As a result, they are mixed with the other documents. Strangely, I
+                                haven't found a way to define a default path for project creation (in reality there are
+                                one but you have to open a project -> open the editor settings -> find and modify the
+                                parameter which didn't seem logical).<br />
+                                So I wanted to add this feature myself and possibly propose it as a contribution. When I
+                                made my proposal, someone had already made one 😓.
+
+                            </p>
+                            <a href="" target="_blank">Link (unavailable)</a>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="textures">
+                            <h3>Texture resolution selector on Godot</h3>
+                            <p>
+                                Surprisingly, Godot does not have texture resolution settings by default. Something that
+                                almost cost us in DeMETeRE. Not finding information anywhere to adjust the resolution of
+                                material textures at runtime, I created my own system.
+                            </p>
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/9OPSMoSK05A?si=FAKc8Pcynx0H2lke"
+                                title="Texture resolution settings" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="wheel">
+                            <h3>Racing wheel input on Godot</h3>
+                            <p>
+                                Godot doesn't detect by default racing wheels like the Logitech or Thrustmaster.
+                                Instead, each button is considered a gamepad button. I have listed the buttons and
+                                axes of my Logitech G923 steering wheel to be able to use it in game. <br />
+                                The problem is that with another steering wheel, the keys could be different. What I
+                                would like to do is implement the steering wheel recognition directly into the engine
+                                with the SDL to facilitate the development of racing or aviation games on Godot.
+                            </p>
+                            <a href="" target="">Link (anavailable)</a>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="interface">
+                            <h3>GDInterface</h3>
+                            <p>
+                                Plugin that allows to use interfaces with GDScript on Godot
+                            </p>
+                            <p>
+                                Sometime when trying to sleep, I think too much. Sometimes it give me ideas. From there
+                                the GDInterface idea came to me. While I call it 'interface', it's more <b>traits</b>
+                                that are <b>used</b> by the objects. GDInterface is in the middle checking and executing
+                                this trait without any <b>typecheck</b>.
+                            </p>
+                            <p>
+                                I've done <a href="https://youtu.be/iD7rwzIVd0k" target="_blank">Youtube tutorial</a>
+                                that explains how it works. <a href="https://github.com/BrokAnkle/GDInterface"
+                                    target="_blank">The Github repo</a> is also well documented.
+                            </p>
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/iD7rwzIVd0k?si=W1845K4hBIMukcEI"
+                                title="GDInterface tutorial" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br />
+                            <a href="https://godotengine.org/asset-library/asset/4363" target="_blank">Lien</a>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="airlock">
+                            <h3>Airlock system C++ plugin in Unreal Engine 5</h3>
+                            <p>
+                                Engine Engine plugin to create modular airlocked door.
+                            </p>
+                            <p>
+                                I generously contributed to the game <a
+                                    href="https://store.steampowered.com/app/2646160/Hiraeth/"
+                                    target="_blank">Hiraeth</a>, a space survival and exploration game on a barren
+                                planet. The developer asked me to create a modular system for airlocked doors. I decided
+                                to make it an open source plugin available on <a
+                                    href="https://github.com/BrokAnkle/AirlockModuleSystem_UnrealEnginePlugin">Github</a>.
+                            </p>
+                            <p>A <a href="https://www.youtube.com/playlist?list=PLFpS-1ONm2bpRavTB7qSoWQfNa0GxSDFx"
+                                    target="_blank">Youtube playlist</a> exist to understant how to use it.</p>
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/QiQBejr67RE?si=C23L08TEWQebyYAQ"
+                                title="Showcase of the Airlock system" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </section>
+                    </li>
+                </ul>
+            </section>
+            <section class="bonus">
+                <h2>Bonus</h2>
+                <p>
+                    Small projects not necessarely finished, often to research and test fonctionnalities.
+                </p>
+                <ul>
+                    <li>
+                        <section class="dev-test">
+                            <h3>
+                                Godot Survivor: Dev Test
+                            </h3>
+                            <p>
+                                Test for junior developers made on Godot for the hiring process in the <a
+                                    href="demetere.html">DeMETeRE project</a>. It demands the candidate to fix bugs,
+                                optimize the code and add features. The game itself is quite fun too.
+                            </p>
+                            <iframe width="552" height="167" frameborder="0" src="https://itch.io/embed/2488986"><a
+                                    href="https://brokankle.itch.io/godot-survivor">Godot Survivor by
+                                    BrokAnkle</a></iframe>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="inventory">
+                            <h3>
+                                Inventory system
+                            </h3>
+                            <p>
+                                For a game project, I wanted to create an inventory system in a grid with drag and drop.
+                            </p>
+                            <a href="" target="_blank">Link (unavailable)</a>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="chatbot">
+                            <h3>
+                                AI Chatbot
+                            </h3>
+                            <p>
+                                While I was learning Godot, I took a course to integrate ChatGPT into a game and chat
+                                with it. Unforunately the AIP had indeed changed since today it no longer works. So I
+                                tried to reproduce it with DeepSeek. It works... until the AI starts not responding
+                                after a few exchanges. I haven't dug deeper that afterwards.
+                            </p>
+                            <a href="" target="_blank">Link (unavailable)</a>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="colorblind">
+                            <h3>
+                                Color correction filter for colorblind people
+                            </h3>
+                            <p>
+                                During the DeMETeRE project, we had to maximize the accessibility of VR experiences. The
+                                question of color blindness quickly arose, so I created a color correction filter that
+                                could be selected via the settings.
+                            </p>
+                            <a href="" target="_blank">Link (unavailable)</a>
+                        </section>
+                    </li>
+                </ul>
+            </section>
+            <p>
+                <a href="..\experiences.html">← back</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Arnaud Guymont</p>
+    </footer>
+</body>
+
+</html>

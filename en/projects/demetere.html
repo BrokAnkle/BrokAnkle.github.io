@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,19 +12,93 @@
     <header>
         <nav>
             <a href="..\..\index.html">Home</a>
-            <a href="..\index.html">About</a>
-            <a href="..\experiences.html">Work</a>
-            <a href="..\skills.html">Skills</a>
+            <a href="..\about.html">About</a>
+            <link rel="stylesheet" href="..\..\assets\css\dropdown.css">
+            <div class="dropdown">
+                <button class="dropbtn"><a href="experiences.html">Projects</a></button>
+                <div class="dropdown-content">
+                    <a href="..\experiences.html">Professionals</a>
+                    <a href="projects\personal-projects.html">Personals</a>
+                    <a href="projects\student-projects.html">Student</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="skills.html">Skills</a></button>
+                <div class="dropdown-content">
+                    <a href="..\skills.html#languages">Programming: languages</a>
+                    <a href="..\skills.html#patterns">Programming: patterns</a>
+                    <a href="..\skills.html#engines">Development: engines</a>
+                    <a href="..\skills.html#specialties">Development: specialties</a>
+                    <a href="..\skills.html#tools">Development: outils</a>
+                    <a href="..\skills.html#organisation">Development: organisation</a>
+                    <a href="..\skills.html#qualities">Qualities</a>
+                </div>
+            </div>
             <a href="..\..\fr\projects\demetere.html">🇫🇷</a>
         </nav>
     </header>
     <main>
         <section class="demetere">
             <p>
-                Page DeMETeRE
+                <a href="..\experiences.html">← back</a>
+            </p>
+            <h1>Lead VR Developer</h1>
+            <h3>November 2023 → March 2026</h3>
+            <img src="../../assets/img/Demetere.png" alt="Logo DeMETeRE" width="300" height="300">
+            <p>
+                DeMETeRE was born from COVID-19 lockdowns. The goal is to bring college to the student. This largely
+                involves virtualization. I joined the DeMETeRE project as the sole VR developer. The team was looking
+                for someone from video games to create educational simulations for students. No project had been
+                conceptualized yet, I was expected to help define what is possible to achieve (and then achieve it).
+            </p>
+            <p>
+                Supported by the pedagogical engineers, I met with the teachers and the students in
+                industrial engineering for requirements and define specifications. Meanwhile, while I was
+                about to start prototyping/research and development on Unity, a person close to the project advised me
+                to try the <a href="https://godotengine.org/fr/" target="_blank">Godot engine</a> and <i>I would
+                    never thank it enough</i>.
+            </p>
+            <p>
+                Honestly, I was thinking of testing the engine for a week or two, realizing that it lacked far too many
+                features and that I couldn’t do what I wanted, then go back to Unity. But not at all! I was impressed by
+                what this small engine that fits all in an executable, its capabilities, the speed at which we can start
+                developing (no setup, no shader compilation, no connection to an account/launcher...), and the
+                adaptation happened much faster than I imagined.
+            </p>
+            <p>
+                My project was to recreate the manipulation of a <a
+                    href="https://fr.wikipedia.org/wiki/Machine_%C3%A0_mesurer_tridimensionnelle"
+                    target="_blank">Three-Dimensional Measuring Machine</a> that only exists at the engineering school
+                of Charleville-Mézières in the region. It's a machine that allows testing the conformity of industrial
+                parts to the nearest micrometer, and there is a whole process that I had to learn myself in order to
+                reproduce.
+            </p>
+            <p>
+                While the development of my project was progressing, we had requests for more virtualization projects
+                and training to industrial machines. So I proposed to recruit a small team of developers and a graphic
+                designer. I wrote the job offers, received the applications, participated in the interviews and
+                selection of candidates. I also created a <a href="https://brokankle.itch.io/godot-survivor"
+                    target="_blank">small exercise</a> on Godot to familiarize them with the engine.
+                The objective was to optimize the code of a vampire-survivor type game, fix bugs, and implement new
+                features.
+            </p>
+            <p>
+                About a year after my arrival in the project, I became lead of the VR team. I made sure to welcome the
+                newcommers,onboarding them on the project and their mission, then I helped when there was a technical
+                problem. Finally, I created a Trello and a Teams chat where we organized and shared our work.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/M2SLb_hNWMs?si=zxKm9-zDPWnUM4yh"
+                title="MMT Trailer" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p>
+                <a href="..\experiences.html">← back</a>
             </p>
         </section>
     </main>
+    <footer>
+        <p>© 2026 Arnaud Guymont</p>
+    </footer>
 </body>
 
 </html>

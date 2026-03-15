@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnaud Guymont – Game Programmer</title>
+    <link rel="stylesheet" href="..\assets\css\style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="..\index.html">Home</a>
+            <a href="about.html">About</a>
+            <link rel="stylesheet" href="..\assets\css\dropdown.css">
+            <div class="dropdown">
+                <button class="dropbtn"><a href="experiences.html">Projects</a></button>
+                <div class="dropdown-content">
+                    <a href="experiences.html">Professionals</a>
+                    <a href="projects\personal-projects.html">Personals</a>
+                    <a href="projects\student-projects.html">Student</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn-current">Skills</button>
+                <div class="dropdown-content">
+                    <a href="#languages">Programming: languages</a>
+                    <a href="#patterns">Programming: patterns</a>
+                    <a href="#engines">Development: engines</a>
+                    <a href="#specialties">Development: specialties</a>
+                    <a href="#tools">Development: outils</a>
+                    <a href="#organisation">Development: organisation</a>
+                    <a href="#qualities">Qualities</a>
+                </div>
+            </div>
+            <a href="..\fr\skills.html">🇫🇷</a>
+        </nav>
+    </header>
+    <main>
+        <section class="skills">
+            <h1>Skills</h1>
+            <h2>Programming skills</h2>
+            What I can code
+            <h3 id="languages">Programming languages</h3>
+            <ul>
+                <li>
+                    <b>C/C++</b>
+                    <p>
+                        More practice with the Unreal Engine's framework, I can get away with basic programs. I plan to
+                        work my C++ by following the <a
+                            href="https://www.khronos.org/blog/new-vulkan-game-engine-tutorial-build-your-own-production-ready-rendering-engine?="
+                            target="_blank">Vulkan's game engine programming course by Khronos</a>. During my work on <a
+                            href="https://godotengine.org/fr/" target="_blank">Godot</a>, I frequently needed to visit
+                        the <a href="https://github.com/godotengine/godot" target="_blank">source code</a>. I would like
+                        to contribute to the engine too. I already experimented a little bit by adding features.There
+                        is also the <a href="https://www.raylib.com/">Raylib</a> library that I'd like to explore. It's
+                        written in C but bindings exist for a lot of languages.
+                    </p>
+                </li>
+                <li>
+                    <b>C#</b>
+                    <p>
+                        Like for C++, my experience with C# comes majorly from using the game engine <a
+                            href="https://unity.com/fr" target="_blank">Unity</a>. I also explored <a
+                            href="https://godotengine.org/download/windows/" target="_blank">Godot .NET</a> to see the
+                        difference against the standard version (GDScript).
+                    </p>
+                </li>
+                <li>
+                    <b>GDScript</b>
+                    <p><a href="https://docs.godotengine.org/fr/4.x/tutorials/scripting/gdscript/gdscript_basics.html"
+                            target="_blank">GDScript</a>
+                        is the scripting of the <a href="https://godotengine.org/fr/" target="_blank">Godot</a> game
+                        engine. It's a very accessible language, close to Python with some elements reminding of
+                        JavaScript. It's very performant but its perk is its flexibility et its hot reload capability.
+                        We can edit scripts at runtime and changes are immediatly ingame. Great for quick testing and
+                        debuging. If we need more performance, Godot allow us to create <a
+                            href="https://docs.godotengine.org/en/stable/tutorials/scripting/gdextension/what_is_gdextension.html"
+                            target="_blank">C++ modules called GDExtension</a>. If you're familiar with Unreal Engine,
+                        it's the same as creating C++ code that you'll call in Blueprint.
+                    </p>
+                </li>
+                <li>
+                    <b>Lua</b>
+                    <p>
+                        Lua is the first language teached at Creajeux, with the <a
+                            href="https://www.love2d.org/">LÖVE2D</a> framework (the one that was used to create <a
+                            href="https://store.steampowered.com/app/2379780/Balatro/" target="_blank">Balatro</a>), I
+                        made my video game projects.
+                    </p>
+                </li>
+                <li>
+                    <b>Various</b>
+                    <p>
+                        I had some short experiences with HTML/CSS during my first computer science courses (and to
+                        create this site), but also with JavaScript in highschool using <a href="https://processing.org"
+                            target="_blank">Processing</a> and on <a href="https://fr.khanacademy.org/"
+                            target="_blank">KhanAcademy</a>. I also written some Python scripts.
+                    </p>
+                </li>
+            </ul>
+            <h3 id="patterns">Pattern</h3>
+            Programming patterns that I use:
+            <ul>
+                <li>
+                    <b>Singleton</b>
+                    <p>
+                        A singleton is a unique, globaly accessible instance of a class. It's one of the easiests
+                        patterns to understand and use, but just as easy to abuse. I'm always looking to respect the
+                        <b>SOLID</b> principles including the <i>"single-responsability"</i>, so my singletons stay
+                        clears and concises.
+                    </p>
+                </li>
+                <li>
+                    <b>Observer</b>
+                    <p>
+                        The <i>observer</i> pattern is an event system where objects that doesn't know each other, don't
+                        references themselves, manage to communicate through events (<a
+                            href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Events.UnityEvent.html"
+                            target="_blank">Unity event</a>,
+                        <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/delegates-and-lambda-functions-in-unreal-engine"
+                            target="_blank">Unreal Engine delegate</a>, <a
+                            href="https://docs.godotengine.org/en/stable/getting_started/step_by_step/signals.html"
+                            target="_blank">Godot signals</a>). Objects connect to events, and other objects emit
+                        messages to all these objects. This prevent dependancies between objects and spaghetti code.
+                    </p>
+                </li>
+                <li>
+                    <b>State machine</b>
+                    <p>
+                        A state machine allow to decouple code that is run only in specific case in their own module.
+                        It's very common in character locomotion. Indeed, movement can exist in different states:
+                        <i>idle, walk, run, jump, crouch</i>... Locomotion code exist in each of these states and the
+                        character change its "current_state" according to the controller inputs (if I press on the jump
+                        input and that my "current_state" allow to jump, "current_state" become a JumpState).
+                    </p>
+                </li>
+                <li>
+                    <b>Object pooling</b>
+                    <p>
+                        Object pooling is a pattern that allows memory optimization by keeping already instanciated
+                        object to re-use. This prevent allocation and de-allocation operation in memory that could cause
+                        <i>stutters</i> when lots of objects appear and disappear in quick succession.
+                    </p>
+                </li>
+                <li>
+                    <b><i>Composition over inheritance</i></b>
+                    <p>
+                        With experience, I understand why we favorite composition over inheritance in object oriented
+                        programming. This makes a more concise, concentrated and modular code, unlike inheritance to
+                        excess where each derived class adds on top of what already exists. Inheritance stays very
+                        usefull, specially for creating a base class then a generation of derivated classes for example.
+                    </p>
+                </li>
+                <li>
+                    <b>Interface</b>
+                    <p>
+                        Interfaces are used to create flexible and modular systems in object oriented programming (and
+                        so in game programming). An interface is an <b>abstract</b> class which group together a set of
+                        functions that each class implementing it must define. The most common examples are
+                        <i>Interactable</i>, <i>Pickable</i>, <i>Damageable</i>. These classes say "I can be
+                        interacted/picked up/damaged".
+                    </p>
+                </li>
+                <li>
+                    <b>Data Driven Design</b>
+                    <p>
+                        DDD is a very important design pattern to get a clean and maintenable code in my opinion. It
+                        consist of splitting data from systems (code). For example, the player's statistics will be in
+                        their own fil (JSON or another engine-specific format: <a
+                            href="https://dev.epicgames.com/documentation/en-us/unreal-engine/data-assets-in-unreal-engine"
+                            target="_blank">Unreal Engine's Data Asset</a>, <a
+                            href="docs.unity3d.com/6000.3/Documentation/Manual/class-ScriptableObject.html"
+                            target="_blank">Unity's Scriptable Object</a>, <a
+                            href="https://docs.godotengine.org/en/stable/tutorials/scripting/resources.html"
+                            target="_blank">Godot's Resource</a>) and the code that handle this data is a the script
+                        attached to the object.
+                    </p>
+                </li>
+            </ul>
+            <h2>Developper skills</h2>
+            Tools and methodologies that I use to create games
+            <h3 id="engines">Game Engines</h3>
+            <ul>
+                <li>
+                    <b>Unreal Engine</b>
+                    <p>
+                        I learned Unreal Engine on version 4.26 at Creajeux. Since then, I have benn able to experiment
+                        with Unreal Engine 5 during my time at <a href="https://www.enpc-ediser.com/">ENPC-Ediser</a>
+                        where I took on the role of technical expert <a href=".\projects\ediser.html"><i>see my work on
+                                Simuland at ENPC-Ediser</i></a>
+                    </p>
+                    <p>
+                        I mostly used UE 5 during my contribution to the game <a
+                            href="https://store.steampowered.com/app/2646160/Hiraeth/" target="_blank">Hiraeth</a>
+                        and my port of my last student project <a href="https://youtu.be/_MeH8mOrboc"
+                            target="_blank">"Chrome Arena Infinite"</a> from UE 4.26 to UE 5 named <a
+                            href="https://www.youtube.com/playlist?list=PLFpS-1ONm2brcqPPt0_XCtE7vaBAJBYQy"
+                            target="_blank">"Chrome Arena Redux"</a>.
+                    </p>
+                </li>
+                <li>
+                    <b>Godot</b>
+                    <p>
+                        I discovered Godot by chance while watching a devlog on Youtube, I installed and launched it to
+                        see what it was but I hadn't dug deeper than that at the time. Until I arrive in the <a
+                            href="projects/demetere.html">DeMETeRE project</a> late 2023 and advise me to use it (<a
+                            href="https://youtu.be/LlPOn0nAOeo?si=-Lj-MGlh1AJUu7hP" target="_blank">the Unity's runtime
+                            fee fiasco just bursted</a>). It was a big favorite, after some courses and tutorials, I was
+                        quickly operational to start the project and I was amazed by its ability to iterate quickly,
+                        being able to edit the code at runtime and even the fact that the entierety of the engine exists
+                        in its executable. Beware, although I praise it, the engine is far from perfect, notably around
+                        the import of assets, the lack of texture streaming, and the impossibility of creating
+                        interfaces (this problem is being worked on but there can be a lot of time with it being
+                        resolved, in the meantime, I created the <a href="https://youtu.be/iD7rwzIVd0k"
+                            target="_blank">GDExtension plugin</a> that get close to it).<br />
+                        I often hear people making fun of it because there wouldn't be any <b>*true*</b> hit games made
+                        with Godot so here is a small non-exhaustive list that prove the contrary: <a
+                            href="https://store.steampowered.com/app/1942280/Brotato/" target="_blank">Brotato</a>, <a
+                            href="https://store.steampowered.com/app/1963610/Road_to_Vostok/" target="_blank">Road to
+                            Vostok</a>, <a href="https://store.steampowered.com/app/2868840/Slay_the_Spire_2/"
+                            target="_blank">Slay the Spire 2</a>, <a
+                            href="https://store.steampowered.com/app/2956040/PVKK_Planetenverteidigungskanonenkommandant/"
+                            target="_blank">PVKK</a>, <a
+                            href="https://store.steampowered.com/app/1321440/Cassette_Beasts/" target="_blank">Cassette
+                            Beasts</a>, <a href="https://store.steampowered.com/app/1388770/Cruelty_Squad/"
+                            target="_blank">Cruelty Squad</a>, <a
+                            href="https://store.steampowered.com/app/1762010/Wrought_Flesh/" target="_blank">Wrought
+                            Flesh</a>, <a href="https://store.steampowered.com/app/2124780/Endoparasitic/"
+                            target="_blank">Endoparasitic</a>, <a
+                            href="https://store.steampowered.com/app/3970690/Project_Shadowglass/"
+                            target="_blank">Project
+                            Shadowglass</a>, <a href="https://store.steampowered.com/app/2218750/Halls_of_Torment/"
+                            target="_blank">Halls of
+                            Torment</a>, <a href="https://store.steampowered.com/app/1637320/Dome_Keeper/"
+                            target="_blank">Dome Keeper</a>. <a
+                            href="https://steamdb.info/tech/Engine/Godot/?sort=peak_desc" target="_blank">source</a>
+                        Battlefield 6 uses Godot for its user generated content system "<b>Portal</b>".
+                    </p>
+                </li>
+                <li>
+                    <b>Unity</b>
+                    <p>
+                        I used Unity for my first game projects made with a game engine et during my internship at <a
+                            href="projects/gambim.html">Gambi-M</a>. Unity was my engine of choice for small projects,
+                        mobile or VR. But since I have discovered Godot, I lost interest in it. Its strengths still
+                        remain its immense community, its assets library that significantly accelerates the development
+                        and ads integration (for the business side). Beware, I'm not trying to disparage it, the tool
+                        remains perfectly fine as an engine that allows making good games and I'm not closed to work on
+                        it.
+                    </p>
+                </li>
+            </ul>
+            <h3 id="specialties">Specialties</h3>
+            <ul>
+                <li>
+                    <b>Gameplay</b>
+                    <p>
+                        Every game programmer starts with the gameplay, because without it, there is no game. It
+                        consists of the interaction between entities, the player's actions... in short, what the player
+                        can do and feel directly in the game.
+                    </p>
+                </li>
+                <li>
+                    <b>IA</b>
+                    <p>
+                        Non playable characters like friendly and ennemy bots. I like a lot the <b>Behavior Tree</b>
+                        system and <b><a href="https://goap.crashkonijn.com/readme/theory" target="_blank">GOAP</a></b>
+                        (Goal Oriented Action Planing) to create smart bots in an intuitive manner.
+                    </p>
+                    <p>
+                        I can take advantage of this point to talk about generative AI like LLM. I use it very scarfully
+                        when writing code, the few times I've tried it, the generated code doesn't really match what I'm
+                        looking for, sometimes is full of errors. I use it to check when I have a doubt, or, when I
+                        attack a problem new for me, I can ask for an analysis and a starting point. There are some
+                        AI-generated codes that I used in my work, during my experience on the <a
+                            href="projects/demetere.html">DeMETeRE project</a>, I needed to control an object with high
+                        precision using a joystick. I therefore asked it for the best possible deadzone system for this
+                        problem and I adapted its pseudo-code to my project.
+                    </p>
+                </li>
+                <li>
+                    <b>Tools</b>
+                    <p>
+                        Programming tools is something I learned to appreciate the importance. When we work on a project
+                        that will take us years, and where we will repeat certain actions over several months, we are
+                        often prone to errors/omissions. I like to create tools to facilitate/automate the development
+                        of the project. Tools can also fill a missing feature of the engine.
+                    </p>
+                </li>
+                <li>
+                    <b>Systems</b>
+                    <p>
+                        Making detailed and complex systems that will be used by gameplay programmers and desginers. It
+                        can be an inventory system with object weights, sorting, different sizes in the grid (or more
+                        recently, we see physics based inventory like in <a
+                            href="https://store.steampowered.com/app/1326470/Sons_Of_The_Forest/" target="_blank">Sons
+                            of the Forest</a>), etc...
+                        Or even, a dialog system with multiple choices that leads to different conclusions and events...
+                    </p>
+                </li>
+                <li>
+                    <b>UI</b>
+                    <p>
+                        UI programming may seem daunting but for me it is important to create clean and satisfying
+                        interfaces, using tweens and shaders to bring each element to life. It is sometimes what makes
+                        the difference between an 'amateur' project/'prototype' to a 'refined' project.
+                    </p>
+                </li>
+                <li>
+                    <b>VR</b>
+                    <p>
+                        I discovered VR during my internship at <a href="projects/gambim.html">Gambi-M</a>. It's not as
+                        complicated as it seems. But VR development still has its quirks, obviously, the controls but
+                        also the optimization that must be anticipated as soon as possible.
+                    </p>
+                </li>
+                <li>
+                    <b>Design</b>
+                    <p>
+                        Although I am not a game designer, I pay deep attention to user experience and game feel, to
+                        what is fun in my game. I apply myself to documenting in a GDD and predicting how the different
+                        systems progress and interact with each other.
+                    </p>
+                </li>
+            </ul>
+            <h3 id="tools">Other Tools</h3>
+            <ul>
+                <li>
+                    <b>Git</b>
+                    <p>
+                        I use Git for all my projects, even solo. Hosted on Github or in local, I use <a
+                            href="https://tortoisegit.org/" target="_blank">Tortoise Git</a> as the GUI.
+                        I sometimes like to take risks with Git Bash for few commands. I commit my changes with clears
+                        messages on precises topics (not 5000 files commit with "fixes" as message)
+                    </p>
+                </li>
+                <li>
+                    <b>Blender</b>
+                    <p>
+                        As I like to understand the entire production pipeline, I think it is important that I'm
+                        familiar with the tools of 3D artists. That’s why I took beginner artists courses on
+                        <a href="https://gamedev.tv/courses/complete-blender-creator" target="_blank">GameDev.tv</a> on
+                        Blender. I have already used it professionally to inspect and touch up objects.
+                    </p>
+                </li>
+                <li>
+                    <b>Photoshop</b>
+                    <p>
+                        I have some knowledge of Photoshop to change the colors of an image, resize, add fx etc...
+                        Usefull when the only artists on the team already has his agenda very busy.
+                    </p>
+                </li>
+            </ul>
+            <h3 id="organisation">Organisation</h3>
+            <ul>
+                <li>
+                    <b>Agile and SCRUM</b>
+                    <p>
+                        I use SCRUM for all my projects, even personnals. I use a scheduling software like <a
+                            href="https://trello.com">Trello</a> and give myself tasks to complete in a sprint (1 to
+                        4 weeks).
+                    </p>
+                    <p>
+                        In my lead roles, I schedulled weekly SCRUM meetings where, with the small team, we reported on
+                        our progress, discussed our challenges, and estimated our own tasks for the following week.
+                    </p>
+                </li>
+                <li>
+                    <b>Trello/Hack'n'plan</b>
+                    <p>
+                        I think that a well-conducted project starts with an organization in the know. It is very
+                        important for me to note, describe, and estimate the tasks. At least for myself. During my lead
+                        roles, I took this part very seriously.
+                    </p>
+                </li>
+                <li>
+                    <b>Documentation</b>
+                    <p>
+                        It is important for me to document not only our code, but also the entire project development.
+                        My code is always commented where I consider it relevant. I note my task progress on my tool
+                        (Trello) and make and references UML diagrams that serve me for the design and code
+                        architecture.
+                    </p>
+                </li>
+            </ul>
+            <h2 id="qualities">Qualities</h2>
+            Because technical skills or not all that matters
+            <ul>
+                <li>
+                    Proactive
+                    <P>
+                        I am the opposite of passive, I always seek to bring new ideas and help as much as I can my
+                        team.
+                    </P>
+                </li>
+                <li>
+                    Ambitious
+                    <p>
+                        I seek to create projects that want to reach involved audiences, who are not content with a
+                        complacent niche, who do not hesitate to face competition that has more experience and means. I
+                        also want to climb the hierarchical ladder for one day to lead my projects.
+                    </p>
+                </li>
+                <li>
+                    Autonomous
+                    <p>
+                        Just as team spirit is paramount in our environment, knowing how to manage without needing eyes
+                        over the shoulder or asking colleagues for help to deliver efficiently on time is a sign of
+                        technical and human know-how.
+                    </p>
+                </li>
+                <li>
+                    Passionnate
+                    <p>
+                        It seems that many developers are in the sector because it pays well and doesn’t require too
+                        much effort, which surprises me a lot because my vision is quite different: I always redouble my
+                        efforts to create intuitive and satisfying experiences, and I don’t chase after money. As long
+                        as I can live decently without worrying about the next month, I am satisfied.
+                    </p>
+                </li>
+                <li>
+                    Orderly
+                    <p>
+                        I am very committed to respecting the teachings of more experienced people who were able to
+                        learn from their mistakes. That’s why I apply methods like SOLID and SCRUM, coding conventions
+                        which, in my opinion, exist for obvious reasons.
+                    </p>
+                </li>
+                <li>
+                    Involved
+                    <p>
+                        As I am passionate about my work, I am necessarily invested in what it involves, research, code
+                        architecture, documentation, testing etc...
+                    </p>
+                </li>
+                <li>
+                    Team player
+                    <p>
+                        One can be a good programmer, even a 'star coder', but if one is an unpleasant person, who
+                        refuses to help their colleagues and makes their team uncomfortable, then they will be a burden
+                        for the project. Team sport and my service in the army taught me that a united team can lift
+                        mountains.
+                    </p>
+                </li>
+                <li>
+                    Critical thinking
+                    <p>
+                        It's important to be able to openly and freely criticize the work of any team member, as long
+                        as it remains constructive and in respect for each other. Just as I propose my criticism to
+                        others, I am open, even asked, for criticism from my peers.
+                    </p>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Arnaud Guymont</p>
+    </footer>
+</body>
+
+</html>

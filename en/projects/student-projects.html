@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnaud Guymont – Game Programmer</title>
+    <link rel="stylesheet" href="..\..\assets\css\style.css">
+    <link rel="stylesheet" href="..\..\assets\css\job-timeline.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="..\..\index.html">Home</a>
+            <a href="..\about.html">About</a>
+            <link rel="stylesheet" href="..\..\assets\css\dropdown.css">
+            <div class="dropdown">
+                <button class="dropbtn-current">Projects</button>
+                <div class="dropdown-content">
+                    <a href="..\experiences.html">Professionals</a>
+                    <a href="personal-projects.html">Personals</a>
+                    <div class="current">Student</div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="skills.html">Skills</a></button>
+                <div class="dropdown-content">
+                    <a href="..\skills.html#languages">Programming: languages</a>
+                    <a href="..\skills.html#patterns">Programming: patterns</a>
+                    <a href="..\skills.html#engines">Development: engines</a>
+                    <a href="..\skills.html#specialties">Development: specialties</a>
+                    <a href="..\skills.html#tools">Development: outils</a>
+                    <a href="..\skills.html#organisation">Development: organisation</a>
+                    <a href="..\skills.html#qualities">Qualities</a>
+                </div>
+            </div>
+            <a href="..\..\fr\projects\gambim.html">🇫🇷</a>
+        </nav>
+    </header>
+    <main>
+        <section class="student-projects">
+            <main>
+                <p>
+                    <a href="..\experiences.html">← back</a>
+                </p>
+                <h1>Student projects</h1>
+                <p>On this page you'll see my games made while I was a student at Creajeux.</p>
+                <div class="container">
+                    <div class="timeline">
+                        <!--Chrome Arena Infinite-->
+                        <!--Timeline item starts-->
+                        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                            <div class="timeline__event__icon"><img src="..\..\assets\img\ChromeArenaInfinite.png"
+                                    width="50" height="50" /></div>
+                            <div class="timeline__event__date">
+                                2022: Third year
+                            </div>
+                            <div class="timeline__event__content" id="chrome-arena-infinite">
+                                <div class="timeline__event__title">
+                                    Chrome Arena Infinite
+                                </div>
+                                <div class="timeline__event__description">
+                                    On my last student project, I assumed the <b>lead programmer</b> role in a team of 4
+                                    programmers, 5 artists and 1 sound designer. We decided to make an arena shooter, in
+                                    a sci-fi high-tech strongly inspired by Ratchet & Clank universe, especially the
+                                    arena sections. This year, we must do the project on Unreal Engine 4.<br />
+                                    I was responsible for the main gameplay, meaning controls, movements, combat and
+                                    animations implementation of the player character. For this I wrote a <a
+                                        href="..\..\assets\Chrome Arena GDD.pdf" target="_blank">GDD</a> which
+                                    concentrates the project's guidelines and our objectives. I created upgrade diagrams
+                                    of the character and his weapons.
+                                    <ul>
+                                        <li>
+                                            <b>Movements</b><br />
+                                            Movements are fast and twitchy, the player controls a combat robot that can
+                                            run, jump (and even double jump!), dash, use a jetpack and a grappling hook
+                                            that hooks on any surface!<br /><br />
+                                        </li>
+                                        <li>
+                                            <b>Combat</b><br />
+                                            The player has by default a cyber-flail and a plasma pistol. He will be able
+                                            to buy new weapons in the shop with the currency, the chrome, that he
+                                            recovers by eliminating the enemies. Each weapon has 2 fire mode, the
+                                            secondary must be unlocked. There are stats upgrade (damage, ammunition,
+                                            rate of fire...) but also in weapon behavior (seeking rocket, laser that
+                                            spreads to nearby enemies).<br /><br />
+                                        </li>
+                                        <li>
+                                            <b>Animations</b><br />
+                                            There has been a lot of work on the animations and their implementation, an
+                                            aim offset for when looking in the air or on the ground, blends for
+                                            multidirectional movements, other blends for movements + melee attacks, some
+                                            attacks are root motion (it means, it's the animation that takes control of
+                                            the character), IKs for large weapons held with 2 hands.<br />
+                                        </li>
+                                    </ul>
+                                    Chrome Arena Infinite is a project of which I am very proud of, it looks very good
+                                    (thank the artists), and it is fun thanks to the atmosphere, the music, the feedback
+                                    etc... We got the mark of 15/20 by a jury of video game professionals. We had had
+                                    the idea to take over the project and release it on Steam, but in the end it we
+                                    didn't make it. I still, ported the project on Unreal Engine 5 and replaced all the
+                                    blueprint code with C++ and redone the logic of the bots with the BehaviorTree and
+                                    the EQS.<br />
+                                    I recommand to <a
+                                        href="https://www.youtube.com/playlist?list=PLFpS-1ONm2bpI7JAYM2H3u-h0pDvBa-eK"
+                                        target="_blank">watch</a> and <a
+                                        href="https://brokankle.itch.io/chrome-arena-infinite" target="_blank">to
+                                        try</a> this game, it's really fun!
+                                    <iframe frameborder="0"
+                                        src="https://itch.io/embed/4375083?border_width=3&amp;bg_color=222222&amp;fg_color=e28412&amp;link_color=fa5c5c&amp;border_color=0499a9"
+                                        width="556" height="171"><a
+                                            href="https://brokankle.itch.io/chrome-arena-infinite">Chrome Arena Infinite
+                                            by BrokAnkle</a></iframe>
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/I0Tm0ZtgbcY?si=xMaIem3PdVIsddEC"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Timeline item ends-->
+                        <!--Bacchiatari-->
+                        <!--Timeline item starts-->
+                        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
+                            <div class="timeline__event__icon"><img src="..\..\assets\img\bachiatari.png" width="70"
+                                    height="70" /></div>
+                            <div class="timeline__event__date">
+                                2021: Second year
+                            </div>
+                            <div class="timeline__event__content" id="bacchiatari">
+                                <div class="timeline__event__title">
+                                    Bacchiatari
+                                </div>
+                                <div class="timeline__event__description">
+                                    Bacchiatari is a third-person action combat game made by 4 programmers and 4 artists
+                                    on Unity. My role gameplay programmer generalist.
+                                    <ul>
+                                        <li>
+                                            I made the inventory system for the player so he can pickup weapons and
+                                            select one from a weapon wheel.
+                                        </li>
+                                        <li>
+                                            I made a checkpoint system in case the player dies he starts again from this
+                                            point.
+                                        </li>
+                                        <li>
+                                            I made a narative tutorial that tells the story of the elementary spirits
+                                            seeking help from the hero while explaining what he has to do.
+                                        </li>
+                                        <li>
+                                            I also reworked the AI system so it's more modular and easy to use.
+                                        </li>
+                                        <li>
+                                            I also implemented some ambiant and feedback sounds like a waterfall,
+                                            crackling fire, enemies that grunt when taking damage, the player jumping...
+                                        </li>
+                                    </ul>
+                                    <video width="400" height="200" controls title="intro cinematic">
+                                        <source src="..\..\assets\img\bacchiatari-trailer.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Timeline item ends-->
+                        <!--Curse of the Torii-->
+                        <!--Timeline item starts-->
+                        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type3">
+                            <div class="timeline__event__icon"><img src="..\..\assets\img\curse-of-the-torii.png"
+                                    width="70" height="60" /></div>
+                            <div class="timeline__event__date">2020: First year</div>
+                            <div class="timeline__event__content" id="curse-of-the-torii">
+                                <div class="timeline__event__title">
+                                    Curse of the Torii
+                                </div>
+                                <div class="timeline__event__description">
+                                    I joined a team of 6 programmers and 3 artists to create a 2D metroidvania with
+                                    CSFML. It's hard to distribute the tasks among 7 programmers, especially when there
+                                    is no lead, nor any organization. I was asked to add gamepad input with adaptive UI.
+                                </div>
+                            </div>
+                        </div>
+                        <!--Timeline item ends-->
+                        <!--Welcome to the World-->
+                        <!--Timeline item starts-->
+                        <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                            <div class="timeline__event__icon"><img src="..\..\assets\img\welcome-to-the-world.gif"
+                                    width="35" height="70" /></div>
+                            <div class="timeline__event__date">2019: Prépa</div>
+                            <div class="timeline__event__content" id="welcome-to-the-world">
+                                <div class="timeline__event__title">
+                                    Welcome to the World
+                                </div>
+                                <div class="timeline__event__description">
+                                    My first group project at Creajeux was a 2D top-down survival-horror. I was among 2
+                                    other programmers and 2 artists..<br />
+                                    I made the main gameplay: controls, combat, healing, inventory...
+                                    <p>
+                                        <a href="..\..\assets\img\welcome-to-the-world.png" target="_blank"><img
+                                                src="..\..\assets\img\welcome-to-the-world.png"
+                                                title="welcome to the world screenshot" width="400" height="200" /></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Timeline item ends-->
+
+                    </div>
+                </div>
+                <p>
+                    <a href="..\experiences.html">← back</a>
+                </p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Arnaud Guymont</p>
+    </footer>
+</body>
+
+</html>
