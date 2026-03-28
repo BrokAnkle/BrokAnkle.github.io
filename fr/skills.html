@@ -11,9 +11,9 @@
 <body>
     <header>
         <nav>
+            <link rel="stylesheet" href="..\assets\css\dropdown.css">
             <a href="..\index.html">Accueil</a>
             <a href="about.html">À propos</a>
-            <link rel="stylesheet" href="..\assets\css\dropdown.css">
             <div class="dropdown">
                 <button class="dropbtn"><a href="experiences.html">Réalisations</a></button>
                 <div class="dropdown-content">
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn-current">Compétences</button>
+                <button class="dropbtn-current"><a href="/" aria-current="page">Compétences</a></button>
                 <div class="dropdown-content">
                     <a href="#languages">Programmation: langages</a>
                     <a href="#patterns">Programmation: patterns</a>
@@ -37,7 +37,8 @@
             <a href="..\en\skills.html">🌐</a>
         </nav>
     </header>
-    <main>
+
+    <main class="container">
         <section class="skills">
             <h1>Compétences</h1>
             <h2>Compétences de programmation</h2>

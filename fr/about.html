@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arnaud Guymont – Game Programmer</title>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="..\index.html">Accueil</a>
-            À propos
             <link rel="stylesheet" href="..\assets\css\dropdown.css">
+            <a href="..\index.html">Accueil</a>
+            <a href="/" aria-current="page">À propos</a>
             <div class="dropdown">
                 <button class="dropbtn"><a href="experiences.html">Réalisations</a></button>
                 <div class="dropdown-content">
@@ -39,7 +38,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <section class="about">
             <h1>À propos</h1>
             <h2>Qui suis-je ?</h2>
@@ -71,60 +70,57 @@
                 et mes <a href="#ambitions">ambitions professionnelles</a>.</p>
             <h2>Formations</h2>
             <link rel="stylesheet" href="../assets/css/education-timeline.css">
-            <div class="container">
-                <div class="wrapper">
+            <div class="timeline-container">
+                <div class="timeline-wrapper">
                     <ul class="timeline">
                         <li>
                             <div class="year">2018 - 2022</div>
-                            <p>
+                            <div class="timeline-title">
                                 <b>Creajeux: Certificat professionnel RNCP niveau 6 (niveau bac + 3/4) programmation
                                     jeux vidéo</b>
+                            </div>
+                            <p>
+                                En 2018 j'ai rejoint l'école <a href="https://www.creajeux.fr/"
+                                    target="_blank">Creajeux</a> à Nîmes. Durant ma première année, nous avons vu
+                                les fondamentaux du jeux vidéo et fait nos premiers jeux en Lua avec le framework <a
+                                    href="https://www.love2d.org/" target="_blank">LÖVE2D</a>, qui plus tard servira
+                                à faire <a href="https://store.steampowered.com/app/2379780/Balatro/"
+                                    target="_blank">Balatro</a>!
                             </p>
                             <p>
-                            <ul>
-                                <p>
-                                    En 2018 j'ai rejoint l'école <a href="https://www.creajeux.fr/"
-                                        target="_blank">Creajeux</a> à Nîmes. Durant ma première année, nous avons vu
-                                    les fondamentaux du jeux vidéo et fait nos premiers jeux en Lua avec le framework <a
-                                        href="https://www.love2d.org/" target="_blank">LÖVE2D</a>, qui plus tard servira
-                                    à faire <a href="https://store.steampowered.com/app/2379780/Balatro/"
-                                        target="_blank">Balatro</a>!
-                                </p>
-                                <p>
-                                    Ma seconde année a été dédiée au C. Nous apprenions le langage, les pointeurs, et
-                                    différents types de structures de données et des algorithmes que nous appliquions
-                                    ensuite dans nos projets avec la librairie <a
-                                        href="https://www.sfml-dev.org/download/csfml/" target="_blank">CSFML</a>.
-                                </p>
-                                <p>
-                                    En troisième année, nous avons fortement élargi nos environs avec notre premier
-                                    moteur de jeux: <a href="https://unity.com/" target="_blank">Unity</a>. Avec
-                                    ça nous devions forcément apprendre le C#. Nous avions eu d'autres cours sur le C++
-                                    où nous fabriquions notre petit moteur de jeu avec la <a
-                                        href="https://www.sfml-dev.org/" target="_blank">SFML</a> en faisant un petit
-                                    Warcraft (rendu, animation de sprite, pathfinding d'entités...). Nous avions aussi
-                                    vu quelques nouveautés comme la programmation tools pour de l'audio, et du python
-                                    pour scripter Blender.
-                                </p>
-                                <p>
-                                    Pour finir, la quatrième et dernière année s'est focalisée sur <a
-                                        href="https://www.unrealengine.com/fr" target="_blank">Unreal Engine</a>. Les
-                                    cours étant principalement basés sur le Blueprint, j'ai toujours tenté le C++ quand
-                                    je pouvais. Nous avions reçu quelques cours sur de la programmation réseau mais
-                                    cette année là était surtout la préparation à l'entrée dans le secteur
-                                    professionnel. Beaucoup de temps passé à travailler les CV, lettres de motivation,
-                                    comment et où trouver un stage, etc...
-                                </p>
-                            </ul>
+                                Ma seconde année a été dédiée au C. Nous apprenions le langage, les pointeurs, et
+                                différents types de structures de données et des algorithmes que nous appliquions
+                                ensuite dans nos projets avec la librairie <a
+                                    href="https://www.sfml-dev.org/download/csfml/" target="_blank">CSFML</a>.
                             </p>
                             <p>
-                                Rendez-vous sur cette <a href="projects\student-projects.html">page</a> pour voir mes
+                                En troisième année, nous avons fortement élargi nos environs avec notre premier
+                                moteur de jeux: <a href="https://unity.com/" target="_blank">Unity</a>. Avec
+                                ça nous devions forcément apprendre le C#. Nous avions eu d'autres cours sur le C++
+                                où nous fabriquions notre petit moteur de jeu avec la <a
+                                    href="https://www.sfml-dev.org/" target="_blank">SFML</a> en faisant un petit
+                                Warcraft (rendu, animation de sprite, pathfinding d'entités...). Nous avions aussi
+                                vu quelques nouveautés comme la programmation tools pour de l'audio, et du python
+                                pour scripter Blender.
+                            </p>
+                            <p>
+                                Pour finir, la quatrième et dernière année s'est focalisée sur <a
+                                    href="https://www.unrealengine.com/fr" target="_blank">Unreal Engine</a>. Les
+                                cours étant principalement basés sur le Blueprint, j'ai toujours tenté le C++ quand
+                                je pouvais. Nous avions reçu quelques cours sur de la programmation réseau mais
+                                cette année là était surtout la préparation à l'entrée dans le secteur
+                                professionnel. Beaucoup de temps passé à travailler les CV, lettres de motivation,
+                                comment et où trouver un stage, etc...
+                            </p>
+                            <p>
+                                Rendez-vous sur cette <a href="projects\student-projects.html">page</a> pour voir
+                                mes
                                 projets étudiants.
                             </p>
                         </li>
                         <li>
                             <div class="year">2017</div>
-                            <p><b>DUT informatique</b></p>
+                            <div class="timeline-title"><b>DUT informatique</b></div>
                             <p>
                                 J'ai fait un rapide passage à un IUT pour obtenir un diplôme d'informatique. Après un
                                 semestre calamiteux, je ne me sentais pas à ma place. Les cours en amphi étaient
@@ -135,8 +131,8 @@
                         </li>
                         <li>
                             <div class="year">2016</div>
-                            <p><b>Baccalauréat Scientifique Option Informatique et Sciences Numérique (ISN) <i>mention
-                                        assez bien</i></b></p>
+                            <div class="timeline-title"><b>Baccalauréat Scientifique Option Informatique et Sciences
+                                    Numérique (ISN) <i>mention assez bien</i></b></div>
                             <p>
                                 C'est au lycée que j'ai écrit mes premières lignes de code. J'ignorais que l'option ISN
                                 existait et par curiosité j'ai pris celle-ci plutôt que physique-chimie, math ou svt.
@@ -145,7 +141,8 @@
                         </li>
                         <li>
                             <div class="year">2015</div>
-                            <p><b>Brevet élémentaire de Fusilier-Marin de la Marine Nationale</b></p>
+                            <div class="timeline-title"><b>Brevet élémentaire de Fusilier-Marin de la Marine
+                                    Nationale</b></div>
                             <p>
                                 Après ma Préparation Militaire Marine, je suis allé faire 2 semaines de FMIR (Formation
                                 Militaire Initiale du Reserviste) à Lorient pour intégrer la Réserve des
@@ -160,7 +157,7 @@
                         </li>
                         <li>
                             <div class="year">2015</div>
-                            <p><b>Préparation Militaire Marine</b></p>
+                            <div class="timeline-title"><b>Préparation Militaire Marine</b></div>
                             <p>
                                 Lorsque des officiers de la Marine Nationale ont visité mon lycée, j'ai accepté
                                 d'intégrer la PMM car j'ai toujours été intéressé par l'armée. Ce premier pas dans la
@@ -202,9 +199,9 @@
                 l'encouragement positif et la mise en valeur des membres de l'équipe.
             </p>
             <h2>Mes centres d'intérêts</h2>
-            Une rubrique plus personnel pour découvrir qui je suis.
+            <span>Une rubrique plus personnel pour découvrir qui je suis.</span>
             <h3>Les jeux vidéo</h3>
-            <i>surprise</i>
+            <span class="comment"><i>surprise</i></span>
             <p>
                 Évidement, difficile d'être développeur de jeux sans un être un joueur soi-même. Les jeux qui m'ont fait
                 grandir commencent bien sûr par Pokémon et Mario mais c'est de Ratchet & Clank dont je garde les
@@ -285,8 +282,8 @@
                     Boys</a>.
             </p>
             <h2>Liens</h2>
-            Pour prendre contact et voir mon travail
-            <p></p>
+            <span>Pour prendre contact et voir mon travail<br /><br /></span>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
             <div class="social-links">
                 <a href="https://linkedin.com/in/arnaudguymont" target="_blank">
                     <i class="fab fa-linkedin"></i>

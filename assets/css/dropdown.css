@@ -1,63 +1,153 @@
 /* Dropdown Button */
-.dropbtn {
+/* .dropbtn {
     background-color: #04aa6d00;
     color: white;
     padding: 12px;
     font-size: 14px;
     border: none;
-}
+} */
 
-.dropbtn-current {
-    background-color: #16161600;
-    color: rgb(50, 50, 50);
-    padding: 12px;
-    font-size: 14px;
-    border: none;
-}
+/* .dropbtn-current {
+    color: #e0f2fe;
+    font-size: 1rem;
+    font-family: monospace;
+    text-decoration: none;
+    padding: 0.4rem 0.8rem;
+} */
 
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
+/* .dropdown {
     position: relative;
     display: inline-block;
-}
+} */
 
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content {
+/* .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 128px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-}
+} */
 
 /* Links inside the dropdown */
-.dropdown-content a {
+/* .dropdown-content a {
     color: black;
     padding: 8px 8px;
     text-decoration: none;
     display: block;
-}
+} */
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
+/* .dropdown-content a:hover {
     background-color: #ddd;
-}
+} */
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+/* .dropdown:hover .dropdown-content {
     display: block;
-}
+} */
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
+/* .dropdown:hover .dropbtn {
     background-color: #3e8e4100;
-}
+} */
 
-.dropdown-content .current {
+/* .dropdown-content .current {
     color: rgb(200, 200, 200);
     background-color: rgb(50, 50, 50);
     padding: 8px 8px;
     text-decoration: none;
     display: block;
+} */
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: #e0f2fe;
+    padding: 0.45rem 1rem;
+    font-size: 0.95rem;
+    font-family: monospace;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+/* Onglet actif — page courante */
+.dropbtn-current {
+    color: #38bdf8;
+    font-size: 0.95rem;
+    font-family: monospace;
+    text-decoration: none;
+    padding: 0.45rem 1rem;
+    border-radius: 8px;
+    background-color: rgba(56, 189, 248, 0.12);
+    cursor: default;
+}
+
+/* Conteneur dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Panneau déroulant (caché par défaut) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: rgba(15, 32, 39, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 0.5px solid rgba(56, 189, 248, 0.2);
+    border-radius: 10px;
+    padding: 6px;
+    padding-top: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    z-index: 100;
+}
+
+/* Liens dans le dropdown */
+.dropdown-content a {
+    color: #e0f2fe;
+    padding: 0.45rem 0.9rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: block;
+    border-radius: 6px;
+    transition: color 0.15s;
+}
+
+/* Hover sur les liens */
+.dropdown-content a:hover {
+    background-color: rgba(56, 189, 248, 0.1);
+    color: #7dd3fc;
+}
+
+/* Affichage du panneau au survol */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Bouton actif quand le dropdown est ouvert */
+.dropdown:hover .dropbtn {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #7dd3fc;
+}
+
+/* Section courante dans le dropdown */
+.dropdown-content .current {
+    color: #38bdf8;
+    background-color: rgba(56, 189, 248, 0.1);
+    padding: 0.45rem 0.9rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    display: block;
+    border-radius: 6px;
+    cursor: default;
 }
