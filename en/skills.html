@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="..\assets\css\style.css">
 </head>
 
-<body class="container">
+<body>
     <header>
         <nav>
+            <a href="..\fr\skills.html">🇫🇷</a>
+            <link rel="stylesheet" href="..\assets\css\dropdown.css">
             <a href="..\index.html">Home</a>
             <a href="about.html">About</a>
-            <link rel="stylesheet" href="..\assets\css\dropdown.css">
             <div class="dropdown">
                 <button class="dropbtn"><a href="experiences.html">Projects</a></button>
                 <div class="dropdown-content">
@@ -23,7 +24,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropbtn-current">Skills</button>
+                <button class="dropbtn-current"><a aria-current="page">Skills</a></button>
                 <div class="dropdown-content">
                     <a href="#languages">Programming: languages</a>
                     <a href="#patterns">Programming: patterns</a>
@@ -34,10 +35,10 @@
                     <a href="#qualities">Qualities</a>
                 </div>
             </div>
-            <a href="..\fr\skills.html">🇫🇷</a>
         </nav>
     </header>
-    <main>
+
+    <main class="container">
         <section class="skills">
             <h1>Skills</h1>
             <h2>Programming skills</h2>
@@ -457,7 +458,8 @@
     </main>
 
     <footer>
-        <p>© 2026 Arnaud Guymont</p>
+        <br /><br />© 2026 Arnaud Guymont
+        <br /><br /><i>Created and maintened by Arnaud GUYMONT, hosted by Github Pages</i>
     </footer>
 </body>
 

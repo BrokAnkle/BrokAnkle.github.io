@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arnaud Guymont – Game Programmer</title>
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <a href="..\index.html">Home</a>
-            About
             <link rel="stylesheet" href="..\assets\css\dropdown.css">
+            <a href="..\fr\about.html">🇫🇷</a>
+            <a href="..\index.html">Home</a>
+            <a aria-current="page" class="current-nav">About</a>
             <div class="dropdown">
                 <button class="dropbtn"><a href="experiences.html">Projects</a></button>
                 <div class="dropdown-content">
@@ -35,11 +35,10 @@
                     <a href="skills.html#qualities">Qualities</a>
                 </div>
             </div>
-            <a href="..\fr\about.html">🇫🇷</a>
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <section class="about">
             <h1>About</h1>
             <h2>Who I am ?</h2>
@@ -66,48 +65,44 @@
                 and my <a href="#ambitions">ambitions</a>.</p>
             <h2>Education</h2>
             <link rel="stylesheet" href="../assets/css/education-timeline.css">
-            <div class="container">
-                <div class="wrapper">
+            <div class="timeline-container">
+                <div class="timeline-wrapper">
                     <ul class="timeline">
                         <li>
                             <div class="year">2018 - 2022</div>
-                            <p>
+                            <div class="timeline-title">
                                 <b>Creajeux: Bachelor in game programming</b>
+                            </div>
+                            <p>
+                                In 2018 I joined <a href="https://www.creajeux.fr/" target="_blank">Creajeux</a>
+                                school in Nîmes. During my first year, we saw the fundamentals of video games and
+                                made our first games in Lua with the <a href="https://www.love2d.org/"
+                                    target="_blank">LÖVE2D</a>, framework wich later will be used to make
+                                <a href="https://store.steampowered.com/app/2379780/Balatro/"
+                                    target="_blank">Balatro</a>!
                             </p>
                             <p>
-                            <ul>
-                                <p>
-                                    In 2018 I joined <a href="https://www.creajeux.fr/" target="_blank">Creajeux</a>
-                                    school in Nîmes. During my first year, we saw the fundamentals of video games and
-                                    made our first games in Lua with the <a href="https://www.love2d.org/"
-                                        target="_blank">LÖVE2D</a>, framework wich later will be used to make
-                                    <a href="https://store.steampowered.com/app/2379780/Balatro/"
-                                        target="_blank">Balatro</a>!
-                                </p>
-                                <p>
-                                    My second year was dedicated to the C programming language. We were learning the
-                                    language, pointers, and different types of data structures and algorithms that we
-                                    then applied in our projects with the <a
-                                        href="https://www.sfml-dev.org/download/csfml/" target="_blank">CSFML</a>
-                                    library.
-                                </p>
-                                <p>
-                                    In the third year, we greatly expanded our surroundings with our first game engine:
-                                    <a href="https://unity.com/" target="_blank">Unity</a>. With that, we necessarily
-                                    had to learn C#. We had other classes on C++ where we made our little game engine
-                                    with the <a href="https://www.sfml-dev.org/" target="_blank">SFML</a> by making a
-                                    small Warcraft (rendering, sprite animation, pathfinding entities...). We also
-                                    learned tools programming for audio, and python for scripting Blender.
-                                </p>
-                                <p>
-                                    Finally, the fourth and final year focused on <a
-                                        href="https://www.unrealengine.com/fr" target="_blank">Unreal Engine</a>. The
-                                    courses being mainly based on Blueprint, I've always tried C++ whenever I could. We
-                                    had received some courses on network programming, but this year was mainly about
-                                    preparing for entry into the professional sector. Much time spent working on
-                                    resumes, cover letters, how and where to find an internship, etc...
-                                </p>
-                            </ul>
+                                My second year was dedicated to the C programming language. We were learning the
+                                language, pointers, and different types of data structures and algorithms that we
+                                then applied in our projects with the <a href="https://www.sfml-dev.org/download/csfml/"
+                                    target="_blank">CSFML</a>
+                                library.
+                            </p>
+                            <p>
+                                In the third year, we greatly expanded our surroundings with our first game engine:
+                                <a href="https://unity.com/" target="_blank">Unity</a>. With that, we necessarily
+                                had to learn C#. We had other classes on C++ where we made our little game engine
+                                with the <a href="https://www.sfml-dev.org/" target="_blank">SFML</a> by making a
+                                small Warcraft (rendering, sprite animation, pathfinding entities...). We also
+                                learned tools programming for audio, and python for scripting Blender.
+                            </p>
+                            <p>
+                                Finally, the fourth and final year focused on <a href="https://www.unrealengine.com/fr"
+                                    target="_blank">Unreal Engine</a>. The
+                                courses being mainly based on Blueprint, I've always tried C++ whenever I could. We
+                                had received some courses on network programming, but this year was mainly about
+                                preparing for entry into the professional sector. Much time spent working on
+                                resumes, cover letters, how and where to find an internship, etc...
                             </p>
                             <p>
                                 Visit this <a href="projects\student-projects.html">page</a> to see my student projects.
@@ -115,7 +110,7 @@
                         </li>
                         <li>
                             <div class="year">2017</div>
-                            <p><b>Computer Science Degree</b></p>
+                            <div class="timeline-title"><b>Computer Science Degree</b></div>
                             <p>
                                 I went for a short time to college for a computer science degree. After a calamitous
                                 semseter, I did'nt feel in my place. The lectures were boring, and the directed projects
@@ -126,7 +121,7 @@
                         </li>
                         <li>
                             <div class="year">2016</div>
-                            <p><b>Highschool degree with Computer science option</b></p>
+                            <div class="timeline-title"><b>Highschool degree with Computer science option</b></div>
                             <p>
                                 It was in high school that I wrote my first lines of code. I didn’t know that
                                 we could do computer science and out of curiosity I took this one rather than
@@ -136,7 +131,8 @@
                         </li>
                         <li>
                             <div class="year">2015</div>
-                            <p><b>Certificate to serve in the French Navy Reserve as Rifleman</b></p>
+                            <div class="timeline-title"><b>Certificate to serve in the French Navy Reserve as
+                                    Rifleman</b></div>
                             <p>
                                 After my PMM, I went to do 2 weeks of Initial Military
                                 Training of the Reservist in Lorient to join the Navy Riflemen Reserve. I was assigned
@@ -150,7 +146,7 @@
                         </li>
                         <li>
                             <div class="year">2015</div>
-                            <p><b>PMM</b></p>
+                            <div class="timeline-title"><b>PMM</b></div>
                             <p>
                                 When Navy officers visited my high school, I agreed to join the PMM because I have
                                 always been interested in the army. This first step in the Navy allowed me to see the
@@ -188,6 +184,39 @@
                 I seek to be inspiring with my peers and to motivate by example, positive encouragement, and
                 highlighting team members.
             </p>
+            <h2>Links</h2>
+            <span>To contact me and see my work<br /><br /></span>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+            <div class="social-links">
+                <a href="https://linkedin.com/in/arnaudguymont" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+                <a href="https://github.com/BrokAnkle" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://www.youtube.com/channel/UC-YYzExtijG_W-vHgGFq-qA" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                    Youtube
+                </a>
+                <a href="https://brokankle.itch.io/" target="_blank">
+                    <i class="fa-brands fa-itch-io"></i>
+                    Itch.io
+                </a>
+                <a href="https://steamcommunity.com/id/arnaud83/" target="_blank">
+                    <i class="fa-brands fa-steam"></i>
+                    Steam
+                </a>
+                <a href="..\assets\CV en stylized.pdf" download>
+                    <i class="fa-solid fa-file"></i>
+                    Download a stylized version of my resume
+                </a>
+                <a href="..\assets\CV en printable.pdf" download>
+                    <i class="fa-regular fa-file"></i>
+                    Download a printable version of my resume
+                </a>
+            </div>
             <h2>Hobbies</h2>
             A more personal section to discover who I am.
             <h3>Video games</h3>
@@ -264,44 +293,12 @@
                 the role of Homelander <a href="https://www.allocine.fr/series/ficheserie_gen_cserie=22668.html"
                     target="_blank">The Boys</a> series.
             </p>
-            </p>
-            <h2>Links</h2>
-            To contact me and see my work
-            <p></p>
-            <div class="social-links">
-                <a href="https://linkedin.com/in/arnaudguymont" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                    LinkedIn
-                </a>
-                <a href="https://github.com/BrokAnkle" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                    GitHub
-                </a>
-                <a href="https://www.youtube.com/channel/UC-YYzExtijG_W-vHgGFq-qA" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                    Youtube
-                </a>
-                <a href="https://brokankle.itch.io/" target="_blank">
-                    <i class="fa-brands fa-itch-io"></i>
-                    Itch.io
-                </a>
-                <a href="https://steamcommunity.com/id/arnaud83/" target="_blank">
-                    <i class="fa-brands fa-steam"></i>
-                    Steam
-                </a>
-                <a href="..\assets\CV en stylized.pdf" download>
-                    <i class="fa-solid fa-file"></i>
-                    Download a stylized version of my resume
-                </a>
-                <a href="..\assets\CV en printable.pdf" download>
-                    <i class="fa-regular fa-file"></i>
-                    Download a printable version of my resume
-                </a>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 Arnaud Guymont</p>
+        <br /><br />© 2026 Arnaud Guymont
+        <br /><br /><i>Created and maintened by Arnaud GUYMONT, hosted by Github Pages</i>
     </footer>
 </body>
 

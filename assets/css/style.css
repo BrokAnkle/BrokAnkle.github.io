@@ -115,28 +115,6 @@ a:visited {
     color: #38bdf8
 }
 
-/* .sessions {
-    margin-top: 2rem;
-    border-radius: 12px;
-    position: relative;
-} */
-
-
-
-.social-links {
-    display: flex;
-    /* Active Flexbox */
-    justify-content: baseline;
-    /* Centre les liens horizontalement */
-    gap: 20px;
-    /* Espace entre les liens */
-    padding: 20px 0;
-    /* Espace vertical */
-    background: #f5f5f5;
-    /* Fond optionnel */
-    border-top: 1px solid #ddd;
-    /* Séparation visuelle */
-}
 
 .social-links a {
     color: #333;
@@ -257,8 +235,7 @@ html {
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%;
-    /* ratio 16:9 */
+    padding-bottom: 60.00%;
     height: 0;
     overflow: hidden;
     border-radius: 8px;
@@ -289,4 +266,89 @@ iframe[src*="youtube"] {
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.25);
     padding: 1rem 1rem;
+}
+
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: linear-gradient(120deg,
+            #0f2027, #203a43);
+    border: 3px solid #0f2027;
+    /* margin: 1rem; */
+    padding: 1rem;
+    border-radius: 9px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0.5rem 1.1rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 0.5px solid rgba(56, 189, 248, 0.2);
+    color: #e0f2fe;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.social-links a:hover {
+    background: rgba(56, 189, 248, 0.1);
+    border-color: rgba(56, 189, 248, 0.5);
+    color: #38bdf8;
+}
+
+.social-links a i {
+    color: inherit;
+    font-size: 1rem;
+    width: 16px;
+    text-align: center;
+}
+
+/* Couleur propre à chaque réseau au survol */
+.social-links a[href*="linkedin"]:hover {
+    background: rgba(10, 102, 194, 0.15);
+    border-color: #0a66c2;
+    color: #7db8f7;
+}
+
+.social-links a[href*="github"]:hover {
+    background: rgba(1, 7, 121, 0.08);
+    border-color: rgba(1, 1, 54, 0.4);
+    color: #ffffff;
+}
+
+.social-links a[href*="youtube"]:hover {
+    background: rgba(255, 0, 0, 0.12);
+    border-color: #ff4444;
+    color: #ff8080;
+}
+
+.social-links a[href*="itch"]:hover {
+    background: rgba(250, 84, 84, 0.12);
+    border-color: #fa5252;
+    color: #ff9e9e;
+}
+
+.social-links a[href*="steam"]:hover {
+    background: rgba(100, 153, 199, 0.15);
+    border-color: #6499c7;
+    color: #a8cce8;
+}
+
+/* Les CV en pleine largeur en bas */
+.social-links a[download] {
+    background: rgba(56, 189, 248, 0.07);
+    border-color: rgba(56, 189, 248, 0.3);
+    color: #7dd3fc;
+    /* flex-basis: 100%; */
+}
+
+.social-links a[download]:hover {
+    background: rgba(56, 189, 248, 0.15);
+    border-color: #38bdf8;
+    color: #e0f2fe;
 }
