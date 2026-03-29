@@ -26,12 +26,14 @@
             <div class="dropdown">
                 <button class="dropbtn-current"><a aria-current="page">Compétences</a></button>
                 <div class="dropdown-content">
-                    <a href="#languages">Programmation: langages</a>
-                    <a href="#patterns">Programmation: patterns</a>
-                    <a href="#engines">Développement: moteurs</a>
-                    <a href="#specialties">Développement: spécialités</a>
-                    <a href="#tools">Développement: outils</a>
-                    <a href="#organisation">Développement: organisation</a>
+                    <a href="#programming">Programmation</a>
+                    <!-- <a href="#languages">Programmation: langages</a> -->
+                    <!-- <a href="#patterns">Programmation: patterns</a> -->
+                    <a href="#dev">Développement</a>
+                    <!-- <a href="#engines">Développement: moteurs</a> -->
+                    <!-- <a href="#specialties">Développement: spécialités</a> -->
+                    <!-- <a href="#tools">Développement: outils</a> -->
+                    <!-- <a href="#organisation">Développement: organisation</a> -->
                     <a href="#qualities">Qualités</a>
                 </div>
             </div>
@@ -42,7 +44,7 @@
         <section class="skills">
             <h1>Compétences</h1>
             <div class="grid">
-                <h2>Compétences de programmation</h2>
+                <h2 id="programming">Compétences de programmation</h2>
                 Ce que je sais faire avec du code<br /><br />
                 <div class="grid-box">
                     <div class="box-element">
@@ -77,7 +79,7 @@
                                 <details>
                                     <summary>
                                         <b>
-                                            <img src="..\assets\img\csharp.svg" alt="C/C++" class="icon">
+                                            <img src="..\assets\img\csharp.svg" alt="C#" class="icon">
                                         </b>
                                     </summary>
                                     <p>
@@ -100,19 +102,16 @@
                                             href="https://docs.godotengine.org/fr/4.x/tutorials/scripting/gdscript/gdscript_basics.html"
                                             target="_blank">GDScript</a> est le langage de scripting du moteur <a
                                             href="https://godotengine.org/fr/" target="_blank">Godot</a>. C'est un
-                                        langage
-                                        très accessible, proche du Python avec quelques éléments rappelant le
-                                        JavaScript. Il
-                                        est très performant mais son atout est sa flexibilité et sa capacité de "hot
-                                        reload". On peut modifier les scripts au runtime et les changements sont pris en
-                                        compte immédiatement en jeu. Super pour de rapides tests et débugages. Si on a
-                                        besoin de plus de performance, Godot propose de créer des <a
+                                        langage très accessible, proche du Python avec quelques éléments rappelant le
+                                        JavaScript. Il est très performant mais son atout est sa flexibilité et sa
+                                        capacité de "hot reload". On peut modifier les scripts au runtime et les
+                                        changements sont pris en compte immédiatement en jeu. Super pour de rapides
+                                        tests et débugages. Si on a besoin de plus de performance, Godot propose de
+                                        créer des <a
                                             href="https://docs.godotengine.org/en/stable/tutorials/scripting/gdextension/what_is_gdextension.html"
                                             target="_blank">modules C++ appelés GDExtension</a>. Si vous êtes familier
-                                        avec
-                                        Unreal Engine, c'est comme lorsque vous créez du code C++ qu'ensuite vous
-                                        appelez en
-                                        Blueprint.
+                                        avec Unreal Engine, c'est comme lorsque vous créez du code C++ qu'ensuite vous
+                                        appelez en Blueprint.
                                     </p>
                                 </details>
                             </li>
@@ -281,7 +280,7 @@
                 </div>
             </div>
             <div class="grid">
-                <h2>Compétences de développeur</h2>
+                <h2 id="dev">Compétences de développeur</h2>
                 Les outils et méthodologies que je maîtrise<br /><br />
                 <div class="grid-box">
                     <div class="box-element">
