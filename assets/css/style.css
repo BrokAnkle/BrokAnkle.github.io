@@ -352,3 +352,122 @@ iframe[src*="youtube"] {
     border-color: #38bdf8;
     color: #e0f2fe;
 }
+
+/* Grid boxes */
+
+/* Grid regroupe des grid box, dans les grid box il y a des box-element qui correspond au contenu */
+.grid {
+    text-align: center;
+    padding: 2rem 1rem;
+    justify-items: center;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: left;
+    /* justify-items: center; */
+    /* width: 100%; */
+}
+
+.box-element:only-child {
+    grid-column: 1 / -1;
+    /* s'étend sur toutes les colonnes */
+    width: 50%;
+    /* prend la moitié de cette largeur totale */
+    margin: 0 auto;
+    /* se centre dans cet espace */
+}
+
+.grid-box ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.box-element {
+    background: rgba(15, 32, 39, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 0.5px solid rgba(56, 189, 248, 0.2);
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    margin-left: 0px;
+    max-height: 220px;
+    /* hauteur max avant scroll */
+    overflow-y: auto;
+    /* scroll si ça dépasse */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(56, 189, 248, 0.3) transparent;
+}
+
+.box-element details {
+    cursor: normal;
+}
+
+
+.box-element summary {
+    font-size: 1.0rem;
+    color: rgba(224, 242, 254, 0.75);
+    list-style: nonde;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.box-element summary::before {
+    content: '▸';
+    color: #38bdf8;
+    font-size: 1.7rem;
+    transition: transform 0.2s;
+}
+
+.box-element details[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.box-element details p {
+    font-size: 0.9rem;
+    color: rgba(224, 242, 254, 0.5);
+    margin: 6px 0 6px 1rem;
+    line-height: 1.6;
+}
+
+/* Scrollbar fine pour Chrome/Safari */
+.box-element::-webkit-scrollbar {
+    width: 4px;
+}
+
+.box-element::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.box-element::-webkit-scrollbar-thumb {
+    background: rgba(56, 189, 248, 0.3);
+    border-radius: 2px;
+}
+
+.box-element h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #38bdf8;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin: 0 0 0.8rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.5px solid rgba(56, 189, 248, 0.2);
+}
+
+@media (max-width: 600px) {
+    .grid-box {
+        grid-template-columns: 1fr;
+    }
+
+    .box-element:only-child {
+        width: 100%;
+    }
+}
+
+/**/

@@ -41,456 +41,744 @@
     <main class="container">
         <section class="skills">
             <h1>Compétences</h1>
-            <h2>Compétences de programmation</h2>
-            Ce que je sais faire avec du code
-            <h3 id="languages">Langages de programmation</h3>
-            <ul>
-                <li>
-                    <b>C/C++</b>
-                    <p>
-                        Plus de pratique avec le framework Unreal Engine, je me dépatouille tout de même pour de simples
-                        programmes. Je prévois de travailler mon C++ en suivant le <a
-                            href="https://www.khronos.org/blog/new-vulkan-game-engine-tutorial-build-your-own-production-ready-rendering-engine?="
-                            target="_blank">cours de programmation de moteur Vulkan de jeu par Khronos</a>. Lors de mon
-                        travail sur <a href="https://godotengine.org/fr/" target="_blank">Godot</a>, j'ai fréquement eu
-                        besoin
-                        de visiter le
-                        <a href="https://github.com/godotengine/godot" target="_blank">code source</a>. J'aimerais aussi
-                        pouvoir
-                        contribuer au moteur. J'ai déjà expérimenté un petit peu à rajouter des fonctionnalités. Il y
-                        aussi
-                        la librairie <a href="https://www.raylib.com/" target="_blank">Raylib</a> que j'aimerais
-                        explorer, elle est écrite en C mais des bindings pour énorméments de langages existent.
-                    </p>
-                </li>
-                <li>
-                    <b>C#</b>
-                    <p>
-                        Comme pour le C++, mon expérience avec le C# relève surtout de son utilisation avec un moteur de
-                        jeu
-                        associé, ici <a href="https://unity.com/fr" target="_blank">Unity</a>. J'ai également exploré <a
-                            href="https://godotengine.org/download/windows/" target="_blank">Godot .NET</a> pour voir
-                        la différence avec la version standard (GDScript)
-                    </p>
-                </li>
-                <li>
-                    <b>GDScript</b>
-                    <p>
-                        Le <a
-                            href="https://docs.godotengine.org/fr/4.x/tutorials/scripting/gdscript/gdscript_basics.html"
-                            target="_blank">GDScript</a>
-                        est le langage de scripting du moteur <a href="https://godotengine.org/fr/"
-                            target="_blank">Godot</a>. C'est un langage très accessible, proche du
-                        Python avec quelques éléments rappelant le JavaScript. Il est très performant mais son atout est
-                        sa
-                        flexibilité et sa capacité de "hot reload". On peut modifier les scripts au runtime et les
-                        changements sont pris en compte immédiatement en jeu. Super pour de rapides tests et débugages.
-                        Si
-                        on a besoin de plus de performance, Godot propose de créer des <a
-                            href="https://docs.godotengine.org/en/stable/tutorials/scripting/gdextension/what_is_gdextension.html"
-                            target="_blank">modules C++ appelés GDExtension</a>. Si
-                        vous êtes familier avec Unreal Engine, c'est comme lorsque vous créez du code C++ qu'ensuite
-                        vous
-                        appelez en Blueprint.
-                    </p>
-                </li>
-                <li>
-                    <b>Lua</b>
-                    <p>
-                        Le Lua est le premier langage enseigné à Creajeux, c'est avec celui-ci et le framework <a
-                            href="https://www.love2d.org/" target="_blank">LÖVE2D</a> (celui
-                        qui a servi à créer <a href="https://store.steampowered.com/app/2379780/Balatro/"
-                            target="_blank">Balatro</a>) que j'ai créé mes premiers projets de jeux vidéo
-                    </p>
-                </li>
-                <li>
-                    <b>Divers</b>
-                    <p>
-                        J'ai eu de courtes expériences avec de l'HTML/CSS lors de mes premiers cours d'informatique (et
-                        pour
-                        créer ce site), mais également avec du JavaScript au lycée en utilisant <a
-                            href="https://processing.org" target="_blank">Processing</a> et sur la
-                        <a href="https://fr.khanacademy.org/" target="_blank">KhanAcademy</a>. J'ai aussi écrit quelques
-                        scripts Python pour des outils.
-                    </p>
-                </li>
-            </ul>
-            <h3 id="patterns">Pattern</h3>
-            Les pattern de programmation que je maitrise:
-            <ul>
-                <li>
-                    <b>Singleton</b>
-                    <p>
-                        Le singleton est une instance unique d'une classe, accessible globlalement. C'est un des
-                        pattern les plus facile à comprendre et utiliser, mais tout aussi facile à abuser. Je cherche
-                        toujours à respecter les principes <b>SOLID</b> dont la <i>"single-responsability"</i>, donc mes
-                        singleton restent clairs et concis.
-                    </p>
-                </li>
-                <li>
-                    <b>Observer</b>
-                    <p>
-                        L'<i>observer</i> correspond à système d'évènements où des objets qui ne se connaîssent pas, ne
-                        se référencent pas, arrivent à communiquer par l'intermédiaire d'évènements (<a
-                            href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Events.UnityEvent.html"
-                            target="_blank">event sur Unity</a>,
-                        <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/delegates-and-lambda-functions-in-unreal-engine"
-                            target="_blank">delegate sur Unreal Engine</a>, <a
-                            href="https://docs.godotengine.org/en/stable/getting_started/step_by_step/signals.html"
-                            target="_blank">signals sur Godot</a>). Des objets se connectent à des évènements, et
-                        d'autres objets émettent des messages à tout à ces objets. Cela évite les dépendances entre les
-                        objets et le code spaghettis.
-                    </p>
-                </li>
-                <li>
-                    <b>State machine</b>
-                    <p>
-                        Une state machine permet de découpler du code qui n'est exécuté que dans un certains cas
-                        dans son propre module. C'est très courant dans la locomotion d'un personnage. En effet, le
-                        mouvement peut exister dans différents états: <i>idle, walk, run, jump, crouch</i>...
-                        Le code de locomotion existe dans chacun de ses états et le personnage change de
-                        "current_state" selon les actions du controller (si j'appuie sur la touche de saut et que ma
-                        "current_state" m'autorise de sauter, alors "current_state" devient un JumpState).
-                    </p>
-                </li>
-                <li>
-                    <b>Object pooling</b>
-                    <p>
-                        L'object pooling est un pattern permettant d'optimiser la mémoire en gardant les objets
-                        déjà instanciés pour les recycler. Cela évite les opérations de création et déstruction en
-                        mémoire ce qui peut causer des <i>freezes</i> (aussi appelés <i><b>stutters</b></i>) lorsque
-                        beaucoup d'objets apparaîssent et disparraîssent en succession rapide.
-                    </p>
-                </li>
-                <li>
-                    <b><i>Composition over inheritance</i></b>
-                    <p>
-                        Avec l'expérience, j'ai compris pourquoi on préfère la composition plutôt que l'héritage
-                        dans la programmation orientée objet. Cela rend un code plus concis, concentré et modulaire,
-                        contrairement à l'héritage à outrance où chaque classe dérivée ajoute par-dessus ce qui
-                        existe déjà. L'héritage reste très utile, nottament, pour créer une classe de base, puis une
-                        génération de dérivée par exemple.
-                    </p>
-                </li>
-                <li>
-                    <b>Interface</b>
-                    <p>
-                        L'interfaçage sert à créer des systèmes flexibles et modulaires dans la
-                        programmation orientée objet (et donc la prog JV). Une interface est une classe <b>abstraite</b>
-                        qui regroupe un ensemble de fonctions que chaque classe qui l'implémente doit définir. Les
-                        exemples les plus courants sont <i>Interactable</i>, <i>Pickable</i>, <i>Damageable</i>. Ces
-                        classes disent "je peux être interagit/récupéré/endommagé".
-                    </p>
-                </li>
-                <li>
-                    <b>Data Driven Design</b>
-                    <p>
-                        Le DDD est un design pattern très important pour un code propre et maintenable à mon avis.
-                        Il consiste à séparer les données (data) des systèmes (code). Par exemple, les statistiques du
-                        joueur seront dans leur fichier (cela peut être JSON ou un autre format propre au
-                        moteur: <a
-                            href="https://dev.epicgames.com/documentation/en-us/unreal-engine/data-assets-in-unreal-engine"
-                            target="_blank">Data Asset pour Unreal Engine</a>, <a
-                            href="docs.unity3d.com/6000.3/Documentation/Manual/class-ScriptableObject.html"
-                            target="_blank">Scriptable Object pour Unity</a>, <a
-                            href="https://docs.godotengine.org/en/stable/tutorials/scripting/resources.html"
-                            target="_blank">Resource pour Godot</a>) et le code qui manipule ces données est le script
-                        attaché à l'objet.
-                    </p>
-                </li>
-            </ul>
-            <h2>Compétences de développeur</h2>
-            Les outils et méthodologies que je maîtrise
-            <h3 id="engines">Moteur de jeux</h3>
-            <ul>
-                <li>
-                    <b>Unreal Engine</b>
-                    <p>
-                        J'ai appris Unreal Engine sur la version 4.26 à Creajeux. Depuis, j'ai pu expérimenter
-                        Unreal Engine 5 lors de mon passage chez <a href="https://www.enpc-ediser.com/"
-                            target="_blank">ENPC-Ediser</a> où j'endossais le rôle d'expert technique. <a
-                            href=".\projects\ediser.html"><i>voir mon travail sur Simuland chez ENPC-Ediser</i></a>
-                    </p>
-                    <p>
-                        J'ai surtout utilisé UE 5 lors de ma contribution au jeu <a
-                            href="https://store.steampowered.com/app/2646160/Hiraeth/" target="_blank">Hiraeth</a>
-                        et mon port de mon dernier projet étudiant <a
-                            href="projects/student-projects.html#chrome-arena-infinite">Chrome Arena Infinite"</a> de UE
-                        4.26 vers UE 5 nommé <a
-                            href="https://www.youtube.com/playlist?list=PLFpS-1ONm2brcqPPt0_XCtE7vaBAJBYQy"
-                            target="_blank">"Chrome Arena Redux"</a>.
-                    </p>
-                </li>
-                <li>
-                    <b>Godot</b>
-                    <p>
-                        J'ai découvert Godot par hasard en regardant un devlog sur Youtube, je l'ai installé et lancé
-                        pour voir ce que c'était mais je n'avais pas creusé plus que ça à l'époque.
-                        Jusqu'à ce que j'arrive dans le <a href="projects/demetere.html">projet DeMETeRE</a> fin 2023 et
-                        qu'on me conseil de l'utiliser (<a href="https://youtu.be/LlPOn0nAOeo?si=-Lj-MGlh1AJUu7hP"
-                            target="_blank">le fiasco des <i>runtime fees</i> d'Unity venait d'éclater</a>).
-                        C'était un grand coup de coeur, après quelques cours et tutoriels, j'ai été rapidement
-                        opérationnel pour démarrer le projet et j'ai été bluffé par sa capacité à itérer rapidement,
-                        pouvoir modifier le code pendant l'exécution et même le fait que tout le moteur existe dans son
-                        exécutable. Attention, bien que j'en fait l'éloge, le moteur est loin d'être parfait, notamment
-                        autour de l'import des assets, le manque de streaming des textures et l'impossibilité de créer
-                        des interfaces (ce problème est en train d'être travaillé mais il peut y avoir beaucoup de temps
-                        avec qu'il soit résolu, en attendant, j'ai créé le <a href="https://youtu.be/iD7rwzIVd0k"
-                            target="_blank">plugin GDExtension</a> qui s'en rapproche).<br />
-                        J'entend souvent des gens s'en moquer parce qu'il n'y aurait pas de <b>*vrais*</b> jeux à succès
-                        fait avec Godot alors voici une petite liste non-exhaustive: <a
-                            href="https://store.steampowered.com/app/1942280/Brotato/" target="_blank">Brotato</a>, <a
-                            href="https://store.steampowered.com/app/1963610/Road_to_Vostok/" target="_blank">Road to
-                            Vostok</a>, <a href="https://store.steampowered.com/app/2868840/Slay_the_Spire_2/"
-                            target="_blank">Slay the Spire 2</a>, <a
-                            href="https://store.steampowered.com/app/2956040/PVKK_Planetenverteidigungskanonenkommandant/"
-                            target="_blank">PVKK</a>, <a
-                            href="https://store.steampowered.com/app/1321440/Cassette_Beasts/" target="_blank">Cassette
-                            Beasts</a>, <a href="https://store.steampowered.com/app/1388770/Cruelty_Squad/"
-                            target="_blank">Cruelty Squad</a>, <a
-                            href="https://store.steampowered.com/app/1762010/Wrought_Flesh/" target="_blank">Wrought
-                            Flesh</a>, <a href="https://store.steampowered.com/app/2124780/Endoparasitic/"
-                            target="_blank">Endoparasitic</a>, <a
-                            href="https://store.steampowered.com/app/3970690/Project_Shadowglass/"
-                            target="_blank">Project
-                            Shadowglass</a>, <a href="https://store.steampowered.com/app/2218750/Halls_of_Torment/"
-                            target="_blank">Halls of
-                            Torment</a>, <a href="https://store.steampowered.com/app/1637320/Dome_Keeper/"
-                            target="_blank">Dome Keeper</a>. <a
-                            href="https://steamdb.info/tech/Engine/Godot/?sort=peak_desc" target="_blank">source</a>
-                        Battlefield 6 utilise Godot pour son système de contenu généré par la communauté
-                        "<b>Portal</b>".
-                    </p>
-                </li>
-                <li>
-                    <b>Unity</b>
-                    <p>
-                        J'ai utilisé Unity pour mes premiers projets sur moteur de jeux et lors de mon stage
-                        conventionné chez <a href="projects/gambim.html">Gambi-M</a>.
-                        Unity était mon moteur de choix pour les petits projets, mobiles ou VR. Mais depuis que j'ai
-                        découvert Godot, j'en ai perdu l'intérêt. Ses forces restent tout de même sa communauté immense,
-                        sa librairie d'assets qui accélère significativement le développement et l'intégration de
-                        monétisation (pour le côté business). Attention, je ne cherche pas à le denigrer,
-                        l'outil reste parfaitement un bon moteur qui permet de faire des bons jeux et je ne suis pas
-                        fermé à travailler dessus. <i>Un bon artisant ne blâme jamais ses outils.</i>
-                    </p>
-                </li>
-            </ul>
-            <h3 id="specialties">Spécialités</h3>
-            <ul>
-                <li>
-                    <b>Gameplay</b>
-                    <p>
-                        Tout programmeur en jeux vidéo commence par le gameplay, parce que sans gameplay, il y a pas de
-                        jeu. Cela consiste à l'interaction entre les entités, les actions du joueur... bref, ce que le
-                        joueur peut faire et ressentir directement en jeu.
-                    </p>
-                </li>
-                <li>
-                    <b>IA</b>
-                    <p>
-                        Personnages non joueurs comme les bots ennemis et alliés. J'aime beaucoup le système de
-                        <b>Behavior Tree</b> et le <b><a href="https://goap.crashkonijn.com/readme/theory"
-                                target="_blank">GOAP</a></b> (Goal Oriented Action Planing) pour créer des bots
-                        "intelligents" de manière intuitive.
-                    </p>
-                    <p>
-                        Je peux profiter de ce point pour parler de l'IA générative type LLM. Je m'en sers très peu lors
-                        de l'écriture du code, les quelques de fois où j'ai essayé, le code généré ne correspond pas
-                        vraiment à ce que je cherche, voir, est plein d'erreurs. Je m'en sers pour vérifier lorsque j'ai
-                        un doute, ou, lorsque j'attaque un problème nouveau pour moi, je peux demander une analyse et un
-                        point de départ. Il y a certains codes générés par IA que j'ai utilisé dans mon travail, lors de
-                        mon expérience sur le <a href="projects/demetere.html">Projet DeMETeRE</a>, j'avais besoin de
-                        controler un objet avec une grande précision en utilisant un joystick. Je lui ai donc demandé
-                        les meilleurs système de <i>deadzone</i> possible pour ce problème et j'ai adapté son
-                        pseudo-code à mon projet.
-                    </p>
-                </li>
-                <li>
-                    <b>Outils</b>
-                    <p>
-                        La programmation d'outils est quelque chose dont j'ai appris à apprécié l'importance. Lorsqu'on
-                        travaille sur un projet qui va nous prendre des années, et où on va répéter certaines actions au
-                        cours de plusieurs mois, on est souvent sujet à des erreurs/oublis. J'aime bien créer des outils
-                        pour faciliter/automatiser le développement du projet. Les outils peuvent aussi combler une
-                        fonctionnalité manquante du moteur.
-                    </p>
-                </li>
-                <li>
-                    <b>Systèmes</b>
-                    <p>
-                        La création de systèmes détaillés et complexes qui seront utilisés par les programmeurs gameplay
-                        et <i>designers</i>.
-                        Cela peut être un système d'inventaire avec poids des objets, tri, différentes tailles dans la
-                        grille (ou depuis peu, on voit apparaître des inventaires physiques comme dans <a
-                            href="https://store.steampowered.com/app/1326470/Sons_Of_The_Forest/" target="_blank">Sons
-                            of the Forest</a>), etc...
-                        Ou encore, un système de dialogues avec différents choix qui mène à différentes conclusions et
-                        évènements...
-                    </p>
-                </li>
-                <li>
-                    <b>UI</b>
-                    <p>
-                        Programmer l'UI peut sembler rébarbatif mais pour moi il est important pour créer des interfaces
-                        propres et satisfaisantes, en utilisant des tweens et des shaders pour donner vie à chaque
-                        élément. C'est parfois ce qui fait la différence entre un projet "amateur"/"prototype" au projet
-                        "raffiné".
-                    </p>
-                </li>
-                <li>
-                    <b>VR</b>
-                    <p>
-                        J'ai découvert la VR lors de mon stage chez <a href="projects/gambim.html">Gambi-M</a>. Ce n'est
-                        pas aussi compliqué qu'il n'y parait. Mais le développement VR a tout de même ses
-                        particularités, évidement, les contrôles mais aussi l'optimisation qui doit être anticipée aussi
-                        tôt que possible.
-                    </p>
-                </li>
-                <li>
-                    <b>Design</b>
-                    <p>
-                        Bien que je ne sois pas <i>game designer</i>, j'accorde une profonde attention à l'expérience
-                        utilisateur et au <i>game feel</i>, à ce qui est <b><i>fun</i></b> dans mon jeu. Je m'applique à
-                        documenter dans un GDD et prévoir comment les différents systèmes progressent et intéragissent
-                        entre eux.
-                    </p>
-                </li>
-            </ul>
-            <h3 id="tools">Outils annexes</h3>
-            <ul>
-                <li>
-                    <b>Git</b>
-                    <p>
-                        J'utilise Git pour tous mes projets, même solo. Hébergé sur Github ou bien en
-                        local, j'utilise <a href="https://tortoisegit.org/" target="_blank">Tortoise Git</a> comme GUI.
-                        J'aime parfois prendre le risque d'utiliser le Git Bash pour quelques commandes. Je fais des
-                        commit avec des messages clairs et sur des topics précis (pas de commit de 5000 fichiers avec
-                        comme message: "fixes")
-                    </p>
-                </li>
-                <li>
-                    <b>Blender</b>
-                    <p>
-                        Comme j'aime comprendre la totalité du pipeline production, je pense qu'il est important
-                        que je sois familier avec les outils des graphistes 3D. C'est pour cela que j'ai pris
-                        des cours sur <a href="https://gamedev.tv/courses/complete-blender-creator"
-                            target="_blank">GameDev.tv</a> de débutant en graphisme sur <a
-                            href="https://www.blender.org/features/" target="_blank">Blender</a>. Je m'en suis déjà
-                        servi professionnellement pour inspecter et retoucher des objets.
-                    </p>
-                </li>
-                <li>
-                    <b>Photoshop</b>
-                    <p>
-                        J'ai quelques notions de Photoshop pour changer les couleurs d'une image,
-                        redimensionner, ajouter des fx etc... Pratique quand le seul graphiste de l'équipe à
-                        déjà son agenda très rempli.
-                    </p>
-                </li>
-            </ul>
-            <h3 id="organisation">Organisation</h3>
-            <ul>
-                <li>
-                    <b>Méthode Agile et SCRUM</b>
-                    <p>
-                        J'utilise le SCRUM dans tous mes projets, même personnels. J'utilise un logiciel de
-                        planification comme <a href="https://trello.com" target="_blank">Trello</a> et me donne des
-                        tâches à réaliser dans un petit lap de temps (entre 1 semaine à 4 semaines).
-                    </p>
-                    <p>
-                        Dans mes rôles de lead, j'organisais des réunions SCRUM hebdomadaires où, avec la petite
-                        équipe, on faisait le topo de nos avancées, discutait de nos difficultés et estimait nos propres
-                        tâches pour la semaine suivante.
-                    </p>
-                </li>
-                <li>
-                    <b>Trello/Hack'n'plan</b>
-                    <p>
-                        Je pense qu'un projet bien mené commence par une organisation au poil. Il est très
-                        important pour moi de noter, décrire, et estimer les tâches. Au moins pour moi-même.
-                        Lors de mes rôles de lead, j'ai pris très à coeur cette partie.
-                    </p>
-                </li>
-                <li>
-                    <b>Documentation</b>
-                    <p>
-                        Il important pour moi de documenter non seulement son code, mais aussi tout le développement du
-                        projet. Mon code est toujours commenté là où je l'estime pertinent. Je note ma progression des
-                        tâches sur mon outil (Trello) et produit et références des schémas UML qui me sert au design et
-                        l'architecture du code.
-                    </p>
-                </li>
-            </ul>
-            <h2 id="qualities">Qualités</h2>
-            Parce qu'il n'y pas que les compétences techniques qui comptent
-            <ul>
-                <li>
-                    Proactif
-                    <P>
-                        Je suis le contraire de passif, je cherche toujours à apporter de nouvelles idées et aider comme
-                        je peux mon équipe.
-                    </P>
-                </li>
-                <li>
-                    Ambitieux
-                    <p>
-                        Je cherche à créer des projets qui veulent toucher des publics avertis, qui ne se contente pas
-                        d'une niche complaisante, qui n'hésite pas à faire face à la concurrence qui a plus d'expérience
-                        et de moyens. Je veux aussi monter l'échelle hiérarchique pour un jour mener mes projets.
-                    </p>
-                </li>
-                <li>
-                    Autonome
-                    <p>
-                        Tout comme l'esprit d'équipe est primordiale dans notre environnement, savoir se débrouiller
-                        sans avoir besoin d'yeux par dessus l'épaule ou demander de l'aide aux collègues pour livrer
-                        efficacement dans les temps est signe de savoir-faire technique et humain.
-                    </p>
-                </li>
-                <li>
-                    Passionné
-                    <p>
-                        Il paraît que beaucoup de développeurs sont dans le secteur parce que ça paye bien et
-                        ça demande pas trop d'effort ce qui m' étonne beaucoup car ma vision est toute autre: je
-                        redouble toujours d'effort pour créer des expériences intuitives et satisfaisantes, et je ne
-                        cours pas après l'argent. Tant que je peux vivre décemment sans me soucier du mois suivant, je
-                        suis satisfait.
-                    </p>
-                </li>
-                <li>
-                    Méthodique
-                    <p>
-                        Je suis très attaché à respecter les enseignements des personnes plus expérimentées qui eux ont
-                        pu apprendre de leurs erreurs. C'est pour cela que j'applique les méthodes comme le SOLID et le
-                        SCRUM, les conventions de codages qui, à mon avis, existent pour des raisons évidentes.
-                    </p>
-                </li>
-                <li>
-                    Investi
-                    <p>
-                        Comme je suis passioné par mon travail, je suis forcément investi dans ce que ça implique, la
-                        recherche, l'architecture de code, la documentation, le test etc...
-                    </p>
-                </li>
-                <li>
-                    Esprit d'équipe
-                    <p>
-                        On peut être un bon programmeur, un "star codeur" même, mais si on est une personne désagréable,
-                        qui refuse d'aider ses collègues et qui met mal à l'aise son équipe, alors on sera un boulet
-                        pour le projet. Le sport collectif et mon service à l'armée m'a appris qu'une équipe soudée peut
-                        soulever des montagnes.
-                    </p>
-                </li>
-                <li>
-                    Critique
-                    <p>
-                        Il est important de pouvoir critiquer ouvertement et librement le travail de tout membre de
-                        l'équipe, tant que ça reste constructif et dans le respect de chacun. Tout comme je propose ma
-                        critique aux autres, je suis ouvert, voir demande, la critique de la part de mes pairs.
-                    </p>
-                </li>
-            </ul>
+            <div class="grid">
+                <h2>Compétences de programmation</h2>
+                Ce que je sais faire avec du code<br /><br />
+                <div class="grid-box">
+                    <div class="box-element">
+                        <h3 id="languages">Langages de programmation</h3>
+                        <ul>
+                            <li>
+                                <details>
+                                    <summary><b>C/C++</b></summary>
+                                    <p>
+                                        Plus de pratique avec le framework Unreal Engine, je me dépatouille tout de même
+                                        pour de simples programmes. Je prévois de travailler mon C++ en suivant le <a
+                                            href="https://www.khronos.org/blog/new-vulkan-game-engine-tutorial-build-your-own-production-ready-rendering-engine?="
+                                            target="_blank">cours de programmation de moteur Vulkan de jeu par
+                                            Khronos</a>.
+                                        Lors de mon travail sur <a href="https://godotengine.org/fr/"
+                                            target="_blank">Godot</a>, j'ai fréquement eu besoin de visiter le
+                                        <a href="https://github.com/godotengine/godot" target="_blank">code source</a>.
+                                        J'aimerais aussi pouvoir contribuer au moteur. J'ai déjà expérimenté un petit
+                                        peu à
+                                        rajouter des fonctionnalités. Il y aussi la librairie <a
+                                            href="https://www.raylib.com/" target="_blank">Raylib</a> que
+                                        j'aimerais explorer, elle est écrite en C mais des bindings pour énorméments de
+                                        langages existent.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>C#</b></summary>
+                                    <p>
+                                        Comme pour le C++, mon expérience avec le C# relève surtout de son utilisation
+                                        avec
+                                        un moteur de jeu associé, ici <a href="https://unity.com/fr"
+                                            target="_blank">Unity</a>. J'ai également exploré <a
+                                            href="https://godotengine.org/download/windows/" target="_blank">Godot
+                                            .NET</a>
+                                        pour voir la différence avec la version standard (GDScript)
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>GDScript</b></summary>
+                                    <p>
+                                        Le <a
+                                            href="https://docs.godotengine.org/fr/4.x/tutorials/scripting/gdscript/gdscript_basics.html"
+                                            target="_blank">GDScript</a> est le langage de scripting du moteur <a
+                                            href="https://godotengine.org/fr/" target="_blank">Godot</a>. C'est un
+                                        langage
+                                        très accessible, proche du Python avec quelques éléments rappelant le
+                                        JavaScript. Il
+                                        est très performant mais son atout est sa flexibilité et sa capacité de "hot
+                                        reload". On peut modifier les scripts au runtime et les changements sont pris en
+                                        compte immédiatement en jeu. Super pour de rapides tests et débugages. Si on a
+                                        besoin de plus de performance, Godot propose de créer des <a
+                                            href="https://docs.godotengine.org/en/stable/tutorials/scripting/gdextension/what_is_gdextension.html"
+                                            target="_blank">modules C++ appelés GDExtension</a>. Si vous êtes familier
+                                        avec
+                                        Unreal Engine, c'est comme lorsque vous créez du code C++ qu'ensuite vous
+                                        appelez en
+                                        Blueprint.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>Lua</b></summary>
+                                    <p>
+                                        Le Lua est le premier langage enseigné à Creajeux, c'est avec celui-ci et le
+                                        framework
+                                        <a href="https://www.love2d.org/" target="_blank">LÖVE2D</a> (celui
+                                        qui a servi à créer <a
+                                            href="https://store.steampowered.com/app/2379780/Balatro/"
+                                            target="_blank">Balatro</a>) que j'ai créé mes premiers projets de jeux
+                                        vidéo
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>Divers</b></summary>
+                                    <p>
+                                        J'ai eu de courtes expériences avec de l'HTML/CSS lors de mes premiers cours
+                                        d'informatique (et pour créer ce site), mais également avec du JavaScript au
+                                        lycée
+                                        en utilisant <a href="https://processing.org" target="_blank">Processing</a> et
+                                        sur
+                                        la <a href="https://fr.khanacademy.org/" target="_blank">KhanAcademy</a>. J'ai
+                                        aussi
+                                        écrit quelques scripts Python pour des outils.
+                                    </p>
+                                </details>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-element">
+                        <h3 id="patterns">Pattern</h3>
+                        Les pattern de programmation que je maitrise:
+                        <ul>
+                            <li>
+                                <details>
+                                    <summary><b>Singleton</b></summary>
+                                    <p>
+                                        Le singleton est une instance unique d'une classe, accessible globlalement.
+                                        C'est un
+                                        des
+                                        pattern les plus facile à comprendre et utiliser, mais tout aussi facile à
+                                        abuser.
+                                        Je
+                                        cherche
+                                        toujours à respecter les principes <b>SOLID</b> dont la
+                                        <i>"single-responsability"</i>,
+                                        donc mes
+                                        singleton restent clairs et concis.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>Observer</b></summary>
+                                    <p>
+                                        L'<i>observer</i> correspond à système d'évènements où des objets qui ne se
+                                        connaîssent
+                                        pas, ne
+                                        se référencent pas, arrivent à communiquer par l'intermédiaire d'évènements (<a
+                                            href="https://docs.unity3d.com/6000.0/Documentation/ScriptReference/Events.UnityEvent.html"
+                                            target="_blank">event sur Unity</a>,
+                                        <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/delegates-and-lambda-functions-in-unreal-engine"
+                                            target="_blank">delegate sur Unreal Engine</a>, <a
+                                            href="https://docs.godotengine.org/en/stable/getting_started/step_by_step/signals.html"
+                                            target="_blank">signals sur Godot</a>). Des objets se connectent à des
+                                        évènements,
+                                        et
+                                        d'autres objets émettent des messages à tout à ces objets. Cela évite les
+                                        dépendances
+                                        entre les
+                                        objets et le code spaghettis.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>State machine</b></summary>
+                                    <p>
+                                        Une state machine permet de découpler du code qui n'est exécuté que dans un
+                                        certains cas dans son propre module. C'est très courant dans la locomotion d'un
+                                        personnage. En effet, le mouvement peut exister dans différents états: <i>idle,
+                                            walk, run, jump, crouch</i>...
+                                        Le code de locomotion existe dans chacun de ses états et le personnage change de
+                                        "current_state" selon les actions du controller (si j'appuie sur la touche de
+                                        saut et que ma "current_state" m'autorise de sauter, alors "current_state"
+                                        devient un JumpState).
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>Object pooling</b></summary>
+                                    <p>
+                                        L'object pooling est un pattern permettant d'optimiser la mémoire en gardant les
+                                        objets
+                                        déjà instanciés pour les recycler. Cela évite les opérations de création et
+                                        déstruction
+                                        en
+                                        mémoire ce qui peut causer des <i>freezes</i> (aussi appelés
+                                        <i><b>stutters</b></i>)
+                                        lorsque
+                                        beaucoup d'objets apparaîssent et disparraîssent en succession rapide.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b><i>Composition over inheritance</i></b></summary>
+                                    <p>
+                                        Avec l'expérience, j'ai compris pourquoi on préfère la composition plutôt que
+                                        l'héritage
+                                        dans la programmation orientée objet. Cela rend un code plus concis, concentré
+                                        et
+                                        modulaire,
+                                        contrairement à l'héritage à outrance où chaque classe dérivée ajoute par-dessus
+                                        ce
+                                        qui
+                                        existe déjà. L'héritage reste très utile, nottament, pour créer une classe de
+                                        base,
+                                        puis
+                                        une
+                                        génération de dérivée par exemple.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>Interface</b></summary>
+                                    <p>
+                                        L'interfaçage sert à créer des systèmes flexibles et modulaires dans la
+                                        programmation orientée objet (et donc la prog JV). Une interface est une classe
+                                        <b>abstraite</b>
+                                        qui regroupe un ensemble de fonctions que chaque classe qui l'implémente doit
+                                        définir.
+                                        Les
+                                        exemples les plus courants sont <i>Interactable</i>, <i>Pickable</i>,
+                                        <i>Damageable</i>.
+                                        Ces
+                                        classes disent "je peux être interagit/récupéré/endommagé".
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>Data Driven Design</b></summary>
+                                    <p>
+                                        Le DDD est un design pattern très important pour un code propre et maintenable à
+                                        mon
+                                        avis.
+                                        Il consiste à séparer les données (data) des systèmes (code). Par exemple, les
+                                        statistiques du
+                                        joueur seront dans leur fichier (cela peut être JSON ou un autre format propre
+                                        au
+                                        moteur: <a
+                                            href="https://dev.epicgames.com/documentation/en-us/unreal-engine/data-assets-in-unreal-engine"
+                                            target="_blank">Data Asset pour Unreal Engine</a>, <a
+                                            href="docs.unity3d.com/6000.3/Documentation/Manual/class-ScriptableObject.html"
+                                            target="_blank">Scriptable Object pour Unity</a>, <a
+                                            href="https://docs.godotengine.org/en/stable/tutorials/scripting/resources.html"
+                                            target="_blank">Resource pour Godot</a>) et le code qui manipule ces données
+                                        est
+                                        le
+                                        script
+                                        attaché à l'objet.
+                                    </p>
+                                </details>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <h2>Compétences de développeur</h2>
+                Les outils et méthodologies que je maîtrise<br /><br />
+                <div class="grid-box">
+                    <div class="box-element">
+                        <h3 id="engines">Moteur de jeux</h3>
+                        <ul>
+                            <li>
+                                <details>
+                                    <summary><b>Unreal Engine</b></summary>
+                                    <p>
+                                        J'ai appris Unreal Engine sur la version 4.26 à Creajeux. Depuis, j'ai pu
+                                        expérimenter
+                                        Unreal Engine 5 lors de mon passage chez <a href="https://www.enpc-ediser.com/"
+                                            target="_blank">ENPC-Ediser</a> où j'endossais le rôle d'expert technique.
+                                        <a href=".\projects\ediser.html"><i>voir mon travail sur Simuland chez
+                                                ENPC-Ediser</i></a>
+                                    </p>
+                                    <p>
+                                        J'ai surtout utilisé UE 5 lors de ma contribution au jeu <a
+                                            href="https://store.steampowered.com/app/2646160/Hiraeth/"
+                                            target="_blank">Hiraeth</a>
+                                        et mon port de mon dernier projet étudiant <a
+                                            href="projects/student-projects.html#chrome-arena-infinite">Chrome Arena
+                                            Infinite"</a> de UE
+                                        4.26 vers UE 5 nommé <a
+                                            href="https://www.youtube.com/playlist?list=PLFpS-1ONm2brcqPPt0_XCtE7vaBAJBYQy"
+                                            target="_blank">"Chrome Arena Redux"</a>.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>Godot</b></summary>
+                                    <p>
+                                        J'ai découvert Godot par hasard en regardant un devlog sur Youtube, je l'ai
+                                        installé
+                                        et lancé
+                                        pour voir ce que c'était mais je n'avais pas creusé plus que ça à l'époque.
+                                        Jusqu'à ce que j'arrive dans le <a href="projects/demetere.html">projet
+                                            DeMETeRE</a>
+                                        fin 2023 et
+                                        qu'on me conseil de l'utiliser (<a
+                                            href="https://youtu.be/LlPOn0nAOeo?si=-Lj-MGlh1AJUu7hP" target="_blank">le
+                                            fiasco des <i>runtime fees</i> d'Unity venait d'éclater</a>).
+                                        C'était un grand coup de coeur, après quelques cours et tutoriels, j'ai été
+                                        rapidement
+                                        opérationnel pour démarrer le projet et j'ai été bluffé par sa capacité à itérer
+                                        rapidement,
+                                        pouvoir modifier le code pendant l'exécution et même le fait que tout le moteur
+                                        existe dans son
+                                        exécutable. Attention, bien que j'en fait l'éloge, le moteur est loin d'être
+                                        parfait, notamment
+                                        autour de l'import des assets, le manque de streaming des textures et
+                                        l'impossibilité de créer
+                                        des interfaces (ce problème est en train d'être travaillé mais il peut y avoir
+                                        beaucoup de temps
+                                        avec qu'il soit résolu, en attendant, j'ai créé le <a
+                                            href="https://youtu.be/iD7rwzIVd0k" target="_blank">plugin GDExtension</a>
+                                        qui
+                                        s'en rapproche).<br />
+                                        J'entend souvent des gens s'en moquer parce qu'il n'y aurait pas de
+                                        <b>*vrais*</b>
+                                        jeux à succès
+                                        fait avec Godot alors voici une petite liste non-exhaustive: <a
+                                            href="https://store.steampowered.com/app/1942280/Brotato/"
+                                            target="_blank">Brotato</a>, <a
+                                            href="https://store.steampowered.com/app/1963610/Road_to_Vostok/"
+                                            target="_blank">Road to
+                                            Vostok</a>, <a
+                                            href="https://store.steampowered.com/app/2868840/Slay_the_Spire_2/"
+                                            target="_blank">Slay the Spire 2</a>, <a
+                                            href="https://store.steampowered.com/app/2956040/PVKK_Planetenverteidigungskanonenkommandant/"
+                                            target="_blank">PVKK</a>, <a
+                                            href="https://store.steampowered.com/app/1321440/Cassette_Beasts/"
+                                            target="_blank">Cassette
+                                            Beasts</a>, <a
+                                            href="https://store.steampowered.com/app/1388770/Cruelty_Squad/"
+                                            target="_blank">Cruelty Squad</a>, <a
+                                            href="https://store.steampowered.com/app/1762010/Wrought_Flesh/"
+                                            target="_blank">Wrought
+                                            Flesh</a>, <a
+                                            href="https://store.steampowered.com/app/2124780/Endoparasitic/"
+                                            target="_blank">Endoparasitic</a>, <a
+                                            href="https://store.steampowered.com/app/3970690/Project_Shadowglass/"
+                                            target="_blank">Project
+                                            Shadowglass</a>, <a
+                                            href="https://store.steampowered.com/app/2218750/Halls_of_Torment/"
+                                            target="_blank">Halls of
+                                            Torment</a>, <a
+                                            href="https://store.steampowered.com/app/1637320/Dome_Keeper/"
+                                            target="_blank">Dome Keeper</a>. <a
+                                            href="https://steamdb.info/tech/Engine/Godot/?sort=peak_desc"
+                                            target="_blank">source</a>
+                                        Battlefield 6 utilise Godot pour son système de contenu généré par la communauté
+                                        "<b>Portal</b>".
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>Unity</b></summary>
+                                    <p>
+                                        J'ai utilisé Unity pour mes premiers projets sur moteur de jeux et lors de mon
+                                        stage
+                                        conventionné chez <a href="projects/gambim.html">Gambi-M</a>.
+                                        Unity était mon moteur de choix pour les petits projets, mobiles ou VR. Mais
+                                        depuis
+                                        que j'ai
+                                        découvert Godot, j'en ai perdu l'intérêt. Ses forces restent tout de même sa
+                                        communauté immense,
+                                        sa librairie d'assets qui accélère significativement le développement et
+                                        l'intégration de
+                                        monétisation (pour le côté business). Attention, je ne cherche pas à le
+                                        denigrer,
+                                        l'outil reste parfaitement un bon moteur qui permet de faire des bons jeux et je
+                                        ne
+                                        suis pas
+                                        fermé à travailler dessus. <i>Un bon artisant ne blâme jamais ses outils.</i>
+                                    </p>
+                                </details>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-element">
+                        <h3 id="specialties">Spécialités</h3>
+                        <ul>
+                            <li>
+                                <details>
+                                    <summary><b>Gameplay</b></summary>
+                                    <p>
+                                        Tout programmeur en jeux vidéo commence par le gameplay, parce que sans
+                                        gameplay, il
+                                        y a pas de
+                                        jeu. Cela consiste à l'interaction entre les entités, les actions du joueur...
+                                        bref,
+                                        ce que le
+                                        joueur peut faire et ressentir directement en jeu.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>IA</b></summary>
+                                    <p>
+                                        Personnages non joueurs comme les bots ennemis et alliés. J'aime beaucoup le
+                                        système
+                                        de
+                                        <b>Behavior Tree</b> et le <b><a
+                                                href="https://goap.crashkonijn.com/readme/theory"
+                                                target="_blank">GOAP</a></b> (Goal Oriented Action Planing) pour créer
+                                        des
+                                        bots
+                                        "intelligents" de manière intuitive.
+                                    </p>
+                                    <p>
+                                        Je peux profiter de ce point pour parler de l'IA générative type LLM. Je m'en
+                                        sers
+                                        très peu lors
+                                        de l'écriture du code, les quelques de fois où j'ai essayé, le code généré ne
+                                        correspond pas
+                                        vraiment à ce que je cherche, voir, est plein d'erreurs. Je m'en sers pour
+                                        vérifier
+                                        lorsque j'ai
+                                        un doute, ou, lorsque j'attaque un problème nouveau pour moi, je peux demander
+                                        une
+                                        analyse et un
+                                        point de départ. Il y a certains codes générés par IA que j'ai utilisé dans mon
+                                        travail, lors de
+                                        mon expérience sur le <a href="projects/demetere.html">Projet DeMETeRE</a>,
+                                        j'avais
+                                        besoin de
+                                        controler un objet avec une grande précision en utilisant un joystick. Je lui ai
+                                        donc demandé
+                                        les meilleurs système de <i>deadzone</i> possible pour ce problème et j'ai
+                                        adapté
+                                        son
+                                        pseudo-code à mon projet.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>Outils</b></summary>
+                                    <p>
+                                        La programmation d'outils est quelque chose dont j'ai appris à apprécié
+                                        l'importance. Lorsqu'on
+                                        travaille sur un projet qui va nous prendre des années, et où on va répéter
+                                        certaines actions au
+                                        cours de plusieurs mois, on est souvent sujet à des erreurs/oublis. J'aime bien
+                                        créer des outils
+                                        pour faciliter/automatiser le développement du projet. Les outils peuvent aussi
+                                        combler une
+                                        fonctionnalité manquante du moteur.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>Systèmes</b></summary>
+                                    <p>
+                                        La création de systèmes détaillés et complexes qui seront utilisés par les
+                                        programmeurs gameplay
+                                        et <i>designers</i>.
+                                        Cela peut être un système d'inventaire avec poids des objets, tri, différentes
+                                        tailles dans la
+                                        grille (ou depuis peu, on voit apparaître des inventaires physiques comme dans
+                                        <a href="https://store.steampowered.com/app/1326470/Sons_Of_The_Forest/"
+                                            target="_blank">Sons
+                                            of the Forest</a>), etc...
+                                        Ou encore, un système de dialogues avec différents choix qui mène à différentes
+                                        conclusions et
+                                        évènements...
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>UI</b></summary>
+                                    <p>
+                                        Programmer l'UI peut sembler rébarbatif mais pour moi il est important pour
+                                        créer
+                                        des interfaces
+                                        propres et satisfaisantes, en utilisant des tweens et des shaders pour donner
+                                        vie à
+                                        chaque
+                                        élément. C'est parfois ce qui fait la différence entre un projet
+                                        "amateur"/"prototype" au projet
+                                        "raffiné".
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>VR</b></summary>
+                                    <p>
+                                        J'ai découvert la VR lors de mon stage chez <a
+                                            href="projects/gambim.html">Gambi-M</a>.
+                                        Ce n'est
+                                        pas aussi compliqué qu'il n'y parait. Mais le développement VR a tout de même
+                                        ses
+                                        particularités, évidement, les contrôles mais aussi l'optimisation qui doit être
+                                        anticipée aussi
+                                        tôt que possible.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>Design</b></summary>
+                                    <p>
+                                        Bien que je ne sois pas <i>game designer</i>, j'accorde une profonde attention à
+                                        l'expérience
+                                        utilisateur et au <i>game feel</i>, à ce qui est <b><i>fun</i></b> dans mon jeu.
+                                        Je
+                                        m'applique à
+                                        documenter dans un GDD et prévoir comment les différents systèmes progressent et
+                                        intéragissent
+                                        entre eux.
+                                    </p>
+                                </details>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-element">
+                        <h3 id="tools">Outils annexes</h3>
+                        <ul>
+                            <li>
+                                <details>
+                                    <summary><b>Git</b></summary>
+                                    <p>
+                                        J'utilise Git pour tous mes projets, même solo. Hébergé sur Github ou bien en
+                                        local, j'utilise <a href="https://tortoisegit.org/" target="_blank">Tortoise
+                                            Git</a>
+                                        comme GUI.
+                                        J'aime parfois prendre le risque d'utiliser le Git Bash pour quelques commandes.
+                                        Je
+                                        fais des
+                                        commit avec des messages clairs et sur des topics précis (pas de commit de 5000
+                                        fichiers avec
+                                        comme message: "fixes")
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>Blender</b></summary>
+                                    <p>
+                                        Comme j'aime comprendre la totalité du pipeline production, je pense qu'il est
+                                        important
+                                        que je sois familier avec les outils des graphistes 3D. C'est pour cela que j'ai
+                                        pris
+                                        des cours sur <a href="https://gamedev.tv/courses/complete-blender-creator"
+                                            target="_blank">GameDev.tv</a> de débutant en graphisme sur <a
+                                            href="https://www.blender.org/features/" target="_blank">Blender</a>. Je
+                                        m'en
+                                        suis déjà
+                                        servi professionnellement pour inspecter et retoucher des objets.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>Photoshop</b></summary>
+                                    <p>
+                                        J'ai quelques notions de Photoshop pour changer les couleurs d'une image,
+                                        redimensionner, ajouter des fx etc... Pratique quand le seul graphiste de
+                                        l'équipe à
+                                        déjà son agenda très rempli.
+                                    </p>
+                                </details>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-element">
+                        <h3 id="organisation">Organisation</h3>
+                        <ul>
+                            <li>
+                                <details>
+                                    <summary><b>Méthode Agile et SCRUM</b></summary>
+                                    <p>
+                                        J'utilise le SCRUM dans tous mes projets, même personnels. J'utilise un logiciel
+                                        de
+                                        planification comme <a href="https://trello.com" target="_blank">Trello</a> et
+                                        me
+                                        donne des
+                                        tâches à réaliser dans un petit lap de temps (entre 1 semaine à 4 semaines).
+                                    </p>
+                                    <p>
+                                        Dans mes rôles de lead, j'organisais des réunions SCRUM hebdomadaires où, avec
+                                        la
+                                        petite
+                                        équipe, on faisait le topo de nos avancées, discutait de nos difficultés et
+                                        estimait
+                                        nos propres
+                                        tâches pour la semaine suivante.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>Trello/Hack'n'plan</b></summary>
+                                    <p>
+                                        Je pense qu'un projet bien mené commence par une organisation au poil. Il est
+                                        très
+                                        important pour moi de noter, décrire, et estimer les tâches. Au moins pour
+                                        moi-même.
+                                        Lors de mes rôles de lead, j'ai pris très à coeur cette partie.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary><b>Documentation</b></summary>
+                                    <p>
+                                        Il important pour moi de documenter non seulement son code, mais aussi tout le
+                                        développement du
+                                        projet. Mon code est toujours commenté là où je l'estime pertinent. Je note ma
+                                        progression des
+                                        tâches sur mon outil (Trello) et produit et références des schémas UML qui me
+                                        sert
+                                        au design et
+                                        l'architecture du code.
+                                    </p>
+                                </details>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <h2 id="qualities">Qualités</h2>
+                Parce qu'il n'y pas que les compétences techniques qui comptent<br /><br />
+                <div class="grid-box">
+                    <div class="box-element">
+                        <ul>
+                            <li>
+                                <details>
+                                    <summary>Proactif</summary>
+                                    <P>
+                                        Je suis le contraire de passif, je cherche toujours à apporter de nouvelles
+                                        idées et
+                                        aider comme
+                                        je peux mon équipe.
+                                    </P>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Ambitieux</summary>
+                                    <p>
+                                        Je cherche à créer des projets qui veulent toucher des publics avertis, qui ne
+                                        se
+                                        contente pas
+                                        d'une niche complaisante, qui n'hésite pas à faire face à la concurrence qui a
+                                        plus
+                                        d'expérience
+                                        et de moyens. Je veux aussi monter l'échelle hiérarchique pour un jour mener mes
+                                        projets.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Autonome</summary>
+                                    <p>
+                                        Tout comme l'esprit d'équipe est primordiale dans notre environnement, savoir se
+                                        débrouiller
+                                        sans avoir besoin d'yeux par dessus l'épaule ou demander de l'aide aux collègues
+                                        pour
+                                        livrer
+                                        efficacement dans les temps est signe de savoir-faire technique et humain.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Passionné</summary>
+                                    <p>
+                                        Il paraît que beaucoup de développeurs sont dans le secteur parce que ça paye
+                                        bien
+                                        et
+                                        ça demande pas trop d'effort ce qui m' étonne beaucoup car ma vision est toute
+                                        autre: je
+                                        redouble toujours d'effort pour créer des expériences intuitives et
+                                        satisfaisantes,
+                                        et
+                                        je ne
+                                        cours pas après l'argent. Tant que je peux vivre décemment sans me soucier du
+                                        mois
+                                        suivant, je
+                                        suis satisfait.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Méthodique</summary>
+                                    <p>
+                                        Je suis très attaché à respecter les enseignements des personnes plus
+                                        expérimentées
+                                        qui
+                                        eux ont
+                                        pu apprendre de leurs erreurs. C'est pour cela que j'applique les méthodes comme
+                                        le
+                                        SOLID et le
+                                        SCRUM, les conventions de codages qui, à mon avis, existent pour des raisons
+                                        évidentes.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Investi</summary>
+                                    <p>
+                                        Comme je suis passioné par mon travail, je suis forcément investi dans ce que ça
+                                        implique, la
+                                        recherche, l'architecture de code, la documentation, le test etc...
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Esprit d'équipe</summary>
+                                    <p>
+                                        On peut être un bon programmeur, un "star codeur" même, mais si on est une
+                                        personne
+                                        désagréable,
+                                        qui refuse d'aider ses collègues et qui met mal à l'aise son équipe, alors on
+                                        sera
+                                        un
+                                        boulet
+                                        pour le projet. Le sport collectif et mon service à l'armée m'a appris qu'une
+                                        équipe
+                                        soudée peut
+                                        soulever des montagnes.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Critique</summary>
+                                    <p>
+                                        Il est important de pouvoir critiquer ouvertement et librement le travail de
+                                        tout
+                                        membre
+                                        de
+                                        l'équipe, tant que ça reste constructif et dans le respect de chacun. Tout comme
+                                        je
+                                        propose ma
+                                        critique aux autres, je suis ouvert, voir demande, la critique de la part de mes
+                                        pairs.
+                                    </p>
+                                </details>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
