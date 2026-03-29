@@ -268,6 +268,12 @@ iframe[src*="youtube"] {
     padding: 1rem 1rem;
 }
 
+.icon {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
 
 .social-links {
     display: flex;
@@ -393,12 +399,17 @@ iframe[src*="youtube"] {
     border-radius: 10px;
     padding: 1rem 1.2rem;
     margin-left: 0px;
-    max-height: 220px;
+    max-height: var(--box-height, 220px);
     /* hauteur max avant scroll */
     overflow-y: auto;
     /* scroll si ça dépasse */
     scrollbar-width: thin;
     scrollbar-color: rgba(56, 189, 248, 0.3) transparent;
+}
+
+.box-element--tall {
+    max-height: 400px;
+    /* écrase le max-height de .box-element */
 }
 
 .box-element details {
