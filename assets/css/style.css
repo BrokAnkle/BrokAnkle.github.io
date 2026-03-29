@@ -279,3 +279,14 @@ iframe[src*="youtube"] {
     aspect-ratio: 16 / 9;
     height: auto;
 }
+
+.current-nav {
+    cursor: default;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 1rem 1rem;
+}
