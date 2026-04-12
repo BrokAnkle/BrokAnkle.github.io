@@ -391,6 +391,20 @@ iframe[src*="youtube"] {
     padding-left: 0px;
 }
 
+.grid-box iframe.box-element {
+    width: 80%;
+    /* prend toute la largeur disponible */
+    height: 167px;
+    /* hauteur fixe — itch.io a un ratio figé */
+    max-width: 552px;
+    /* ne dépasse pas la largeur originale */
+    max-height: none;
+    /* retire le max-height de .box-element */
+    overflow-y: unset;
+    /* retire le scroll de .box-element */
+
+}
+
 .box-element {
     background: rgba(15, 32, 39, 0.6);
     backdrop-filter: blur(10px);
